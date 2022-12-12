@@ -1,0 +1,6103 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* NOTES for the colour change, where the EU greens get converted into US blues
+
+The dark green of the EU footer background is Hex 4F7053. It's US dark blue equivalent is hex 003A5C.
+The lime green of the EU colour scheme is hex D2E45D. It's US pale blue equivalent is hex CAEBFB.
+But beware that some instances of the lime (e.g. backgrounds of box titles) use a greyer blue in US - hex 7F9CAD.
+The grey green of the EU Find by Code is hex 8F9E92. It's US equivalent is the above grey-blue hex 7F9CAD.
+The very dark green/grey of EU active menu item is 4F6054. In US it's the logo green - 008748.
+On the Product tables, the EU grey/green of 636F5D is replaced by the US dark blue of 003A5C.
+*/
+
+
+/* TAKEN FROM BOB'S RWSCOTT CSS 10/07/14 */
+/*.captcha {*/
+    /*margin-left: 183px;*/
+    /*margin-bottom: 10px;*/
+/*}*/
+
+/*#shipping-address .label {*/
+    /*margin-left: 43px;*/
+    /*margin-bottom: 10px;*/
+/*}*/
+
+[v-cloak] {
+    display: none;
+}
+
+strong { /* Added by MJWEBB 160315 */
+  font-weight: 600;
+}
+
+div.productsearch {
+    max-height: 243px;
+    overflow: hidden;
+}
+
+form.productsearch.span3, form.techsearch.span3 {
+    margin-left:0;
+}
+
+form.productsearch label.control-label, form.techsearch label.control-label {
+    font-size: 0.7em;
+    margin-bottom: 2px;
+    line-height: 10px;
+    margin-top: 12px;
+}
+
+
+form.productsearch div.control-group, form.techsearch div.control-group {
+    bottom:20px;
+}
+
+form.productsearch div.controls, form.techsearch div.controls {
+    height:19px;
+}
+
+
+form.productsearch .btn-primary, form.techsearch .btn-primary {
+    margin-top: 10px;
+}
+
+.results-blank-row th.empty,
+.results-probe-name td.empty,
+.short-probe-name td.empty {
+    border-right: solid 0px #FFF;
+}
+
+div.ship-to-container, div.bill-to-container, div.delivery-instructions-container {
+    float:left;
+    margin-bottom: 20px;
+}
+
+
+
+div.bill-to-container, div.ship-to-container {
+    margin-right: 60px;
+
+}
+
+div#cart-confirmation {
+    clear:both;
+}
+
+div#confirmation-delivery-instructions{
+    margin-top: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:silver;
+    width: 300px;
+    height: 180px;
+    overflow: scroll;
+}
+
+div#confirmation-details div.confirmation-line {
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+div#confirmation-details div.confirmation-line span.label{
+    margin-right: 5px;
+}
+
+#shipping-address-label {
+    padding-top:4px;
+    margin-bottom: 20px;
+    height:16px;
+}
+
+#token-error {
+    padding-left:180px;
+    padding-bottom:4px;
+    color: red;
+}
+
+span.product-search-help {
+    font-size: x-small;
+    color: darkred;
+}
+
+div.search-total {
+    font-size: small;
+    font-weight: bold;
+    float: left;
+}
+
+div.search-total.searching {
+    font-style: oblique;
+}
+
+#product-search-reset {
+   font-size: small;
+   float: right;
+}
+
+div#search-actions {
+    clear: both;
+	margin-top: 52px; /* added for double height filter */
+}
+
+div#total-wrapper {
+    width: 219px;
+	margin-top: 25px; /* added for double height filter */
+	clear: both; /* added for double height filter */
+}
+
+#total-wrapper #active-probes {
+    font-size: 10px;
+    clear: left;
+}
+
+#total-wrapper #active-probes .title{
+    font-weight: bold;
+}
+
+#total-wrapper #active-probes .list{
+    font-style: italic;
+}
+
+.help-inline.required {
+    color:lightslategrey;
+    font-style: italic;
+}
+
+#product-modal .price {
+    font-size: 14px;
+    margin-left: 0;
+    font-weight: normal;
+}
+
+#product-modal .warning {
+    font-weight: bold;
+    color: #E97B65;
+}
+
+#product-modal .links {
+    margin-top:5px;
+}
+
+.fixedleft {
+    border-bottom: solid 12px white;
+}
+#quicksearch .error {
+    font-size:11px;
+    color:darkred;
+    line-height:12px;
+}
+
+.page {
+    color: black;
+}
+
+div.lot-table {
+    width: 290px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    background-color: #ECECED;
+}
+div.lot-table td {
+    padding: 2px;
+}
+
+div.lot-table td.lot-number {
+    padding-right: 15px;
+    text-align: right;
+}
+
+.dropdown-backdrop {
+    position: static;
+}
+
+.questionnaire {
+    background-color: #ececed;
+    padding:15px;
+    margin-top:20px;
+    margin-bottom:20px;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.questionnaire .control-group {
+    margin-bottom: 10px;
+}
+
+
+.questionnaire .control-group label {
+    display: inline-block;
+    width: 350px;
+    text-align: left;
+}
+
+.questionnaire .control-group label.radio {
+    width: 40px;
+    text-align: left;
+}
+
+.questionnaire fieldset .control-group label {
+    width:120px;
+    margin-left: 350px;
+    line-height: 15px;
+}
+
+
+.questionnaire fieldset {
+    margin-bottom: 10px;
+}
+
+.questionnaire fieldset legend {
+    font-size: 14px;
+    margin-bottom: -52px;
+    border-bottom: 0px;
+}
+
+.questionnaire fieldset.check .control-group  {
+    margin-bottom: 0px;
+}
+
+
+
+.questionnaire .control-row {
+    margin-top:20px;
+}
+
+.questionnaire  .hint {
+    font-style: italic;
+    font-size: 11px;
+}
+
+.questionnaire div.qcaptcha {
+    margin-top: 20px;
+}
+
+.questionnaire .qcaptcha img {
+    margin-bottom:2px;
+}
+
+.questionnaire .qcaptcha .control-group label {
+    width:auto;
+    margin-right:2px;
+}
+
+.questionnaire .qcaptcha .controls {
+
+}
+/* END OF TAKEN FROM BOB'S RWSCOTT CSS 10/07/14 */
+
+body {
+  padding-top: 12px;
+  color: #202E22;
+}
+a {
+  color: #406B85;
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover {
+  color: #00A35A;
+}
+
+.navbar {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  border-bottom: solid 5px #008748;
+}
+
+.navbar .brand {
+  padding: 4px 18px 4px;
+  margin-left: -20px;
+  font-size: 12px;
+  min-width: 192px;
+  color: #FFF;
+  text-shadow: none;
+  border-right: solid 1px #FFF;
+}
+
+.navbar .brand.loggedin {
+	background-color: #00A35A;
+}
+
+.navbar-inverse .brand:hover,
+.navbar-inverse .nav > li > a:hover,
+.navbar-inverse .brand:focus,
+.navbar-inverse .nav > li > a:focus {
+  color: #95D8F7;
+}
+
+.navbar-inner {
+  min-height: 20px;
+  padding-right: 0px;
+  padding-left: 20px;
+  -webkit-border-radius: 0px;
+ -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.navbar-inverse .navbar-inner {
+  border-color: #008748;
+  background: #406b85; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #406b85 0%, #7f9cad 50%, #406b85 51%, #6e8fa2 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#406b85), color-stop(50%,#7f9cad), color-stop(51%,#406b85), color-stop(100%,#6e8fa2)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #406b85 0%,#7f9cad 50%,#406b85 51%,#6e8fa2 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #406b85 0%,#7f9cad 50%,#406b85 51%,#6e8fa2 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #406b85 0%,#7f9cad 50%,#406b85 51%,#6e8fa2 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #406b85 0%,#7f9cad 50%,#406b85 51%,#6e8fa2 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#406b85', endColorstr='#6e8fa2',GradientType=0 ); /* IE6-9 */
+}
+
+.navbar .nav {
+  margin: 0 0 0 0;
+}
+
+.navbar .nav > li > a {
+  padding: 4px 15px 4px 15px;
+  min-width: 74px;
+  border-right: solid 1px #FFF;
+  color: #FFF;
+  text-shadow: none;
+  font-weight: normal;
+}
+
+.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
+.navbar-inverse .nav .active > a:focus {
+  color: #ffffff;
+  background-color: #008748;
+}
+.navbar-inverse .nav li.dropdown.active > .dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+  color: #ffffff;
+  background-color: #008748;
+}
+
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle {
+color: #ffffff;
+background-color: #008748;
+}
+
+#country-select {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1001; /* increased from default 1000, to get it in front of the custom Probe Selector 04/02/16 MJWEBB
+    /*display: none;*/
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.dropdown-menu > li > a,
+#country-select > li > a
+{
+  line-height: 16px;
+  font-size: 12px;
+  white-space: normal;
+  width: 150px;
+  border-bottom: solid 1px #F3F3F3;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #576D59;
+}
+
+.dropdown-menu.sections > li > a {
+  width: 410px;
+}
+
+.navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
+  border-top-color: #FFF;
+  border-bottom-color: #FFF;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #CAEBFB;
+}
+
+.navbar .btn,
+.navbar .btn-group {
+  margin-top: 0px;
+}
+
+#image img {
+	max-width: 100%;
+}
+
+/* CUSTOM SPANS FOR A THIN MARGIN AT 8PX */
+.row {
+  margin-left: -8px;
+}
+[class*="span"] {
+  margin-left: 8px;
+}
+.span3 {
+  width: 229px;
+}
+.select2-container.span3 {
+  width: 216px;
+}
+.span6 {
+  width: 466px;
+}
+.span9 {
+  width: 703px;
+}
+/* END OF CUSTOM SPANS FOR A THIN MARGIN AT 8PX */
+
+.span2.nomarginfirst {
+  width: 156px; /* this is 940px divided by 6 (span2x6=12) Note: no margin-left 0 for this initial span */
+}
+.span2.nomargin {
+  width: 155px; /* this is 940px divided by 6 (span2x6=12) */
+  margin-left: 0;
+}
+.span3.nomarginfirst {
+  width: 235px; /* this is 940px divided by 4 (span3x4=12) Note: no margin-left 0 for this initial span */
+}
+.span3.nomargin {
+  width: 235px; /* this is 940px divided by 4 (span3x4=12) */
+  margin-left: 0;
+}
+.span4.nomarginfirst {
+  width: 317px; /* this is 940px divided by 12 times 4 (span4x12/4=12) Note: no margin-left 0 for this initial span - UPDATE: was 313, amended to 317 27/01/15 */
+}
+.span1.nomargin {
+  width: 79px; /* this is 940px divided by 12 */
+  margin-left: 0;
+}
+.span4.nomargin {
+  width: 317px; /* this is 940px divided by 3 (span4x3=12) - UPDATE: was 313, amended to 317 27/01/15 */
+  margin-left: 0;
+}
+.span6.nomargin {
+  width: 470px; /* this is 940px divided by 2 (span6x2=12) */
+  margin-left: 0;
+}
+.span7.nomargin {
+  width: 548px; /* this is 940px divided by 12 times 7 (span7x12/7=12) */
+  margin-left: 0;
+}
+.span10.nomargin {
+  width: 782px; /* this is 940px divided by 12 times 10 (span10x12/10=12) */ /* 18112020 - 783 gets amended to 782px and solves Matt's "zoomed out" issue - M J Webb */
+  margin-left: 0;
+}
+
+.span2.thinmargin {
+  width: 157px; /* this is 940px divided by 6 (span2x6=12). Then margin of 3px */
+  margin-left: 3px;
+}
+.span3.thinmarginfirst {
+  width: 232px; /* this is 940px divided by 4 (span3x4=12), then 3px off. Note: no margin-left 0 for this initial span */
+}
+.span3.thinmargin {
+  width: 235px; /* this is 940px divided by 4 (span3x4=12). Then margin of 3px */
+  margin-left: 3px;
+}
+.span3.thinmargin.last {
+  width: 229px;
+  }
+ .span4.thinmargin {
+  width: 313px; /* this is 940px divided by 3 (span4x3=12). Then margin of 3px */
+  margin-left: 3px;
+  }
+.span4.thinmargin.last {
+  width: 307px;
+}
+.span6.thinmargin {
+  width: 467px; /* this is 940px divided by 2 (span6x2=12), then 3px off. Then margin of 3px */
+  margin-left: 3px;
+}
+.span7.thinmargin {
+  width: 545px; /* this is 940px divided by 12 times 7 (span7x12/7=12), then 3px off. Then margin of 3px */
+  margin-left: 3px;
+}
+.span9.thinmargin {
+  width: 705px;
+  margin-left: 3px;
+}
+.innercontent {
+	padding: 7px;
+	margin-bottom: 5px;
+  color: #000;
+}
+
+.quickorder h2 {
+  color: #fff; /* This is to overwrite innercontent colour styling and keep quick order h2 white */
+}
+
+.innercontent.searchresults h2, .innercontent.searchresults h5 {
+  color: #fff; /* overwrite innercontent styling for search results header and page number text */
+}
+
+.innercontent h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.1em;
+	font-weight: 300;
+}
+
+form.productsearch label.control-label, form.techsearch label.control-label { /* Stolen from Bob's rws.css file */
+    font-size: 0.9em!important; /* was 0.8em until the filter doubled in height */
+    margin-bottom: 6px!important; /* was 2px until filter doubled in height */
+    line-height: 10px;
+    margin-top: 18px!important; /* was 12px until filter doubled in height */
+	font-weight: bold; /* 27/04/16 emboldening Prod Filter and Tech Search labels */
+}
+form.productsearch div.control-group, form.techsearch div.control-group { /* Stolen from Bob's rws.css file and right margin added */
+    bottom:20px;
+    margin-right: 10px;
+}
+
+.quickorder {
+	background-color: #7F9CAD;
+	min-height: 73px; /* was 67px before double height filter */
+}
+.quickorder h2 strong {
+  color: #003A5C;
+}
+.quickorder form {
+  margin: 0 0 0px;
+}
+.spotlight {
+	min-height: 259px;
+	background-color: #003A5C;
+	background-image: url(../img/spotlight-back-us.jpg); /* use US background image, not the EU one */
+	background-repeat: no-repeat;
+	background-position: right top;
+	position: relative;
+}
+.spotlight.resultsalt {
+	min-height: 261px;
+}
+.spotlight h3 {
+	font-weight: normal;
+	padding: 0px;
+}
+.spotlight p {
+	font-size: 0.8em;
+	line-height: normal;
+}
+.spotlight .btn-orange {
+	position: absolute;
+	bottom: 14px;
+	right: 14px;
+}
+.exhibition {
+	min-height: 258px;
+	background-color: #FFF;
+	position: relative;
+	color: #95D8F7;
+	border-bottom: solid 1px #ccc;
+	border-left: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+}
+.exhibition h2 {
+	background-color: #7F9CAD;
+	outline: solid 7px #7F9CAD;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-left: 3px;
+	color: #fff;
+}
+.exhibition h2 strong {
+	color: #003A5C;
+}
+.exhibition h3 {
+	font-weight: normal;
+	padding: 0px;
+}
+.exhibition p {
+	font-size: 0.8em;
+	line-height: normal;
+	color: #003A5C;
+}
+.exhibition .btn-lime {
+	position: absolute;
+	bottom: 14px;
+	right: 14px;
+}
+.specialoffers {
+	min-height: 259px;
+	background-color: #CAEBFB;
+	color: #003A5C;
+	font-size: 1em;
+	position: relative;
+	line-height: 1em; /* added 10th April 2015 to combat Matt's table of price reductions disappearing behind the button */
+}
+.specialoffers h2 {
+	background-color: #003A5C;
+	outline: solid 7px #003A5C;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-left: 1px;
+	color: #FFF
+}
+.specialoffers h2 strong {
+	color: #FFF;
+}
+.specialoffers h3 {
+	color: #FFF;
+	font-weight: normal;
+}
+.specialoffers p {
+	font-size: 0.8em;
+	line-height: 1em;
+}
+.specialoffers .btn-bottlegreen {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+}
+.quickorder .input-small {
+  width: 120px;
+}
+.quickorder input[type="email"] {
+  padding: 1px 6px;
+}
+.quickorder .btn {
+  padding: 1px 12px;
+}
+.productsearch {
+	background-color: #CAEBFB;
+	min-height: 315px;
+	color: #003A5C;
+}
+.productsearch h2 {
+  background-color: #003A5C;
+  outline: solid 7px #003A5C;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-left: 1px;
+  color: #fff;
+}
+.productsearch h2 strong {
+	color: #95D8F7;
+}
+.productsearch form fieldset label, .techsearchbox form fieldset label {
+	font-size: 0.7em;
+	margin-bottom: 2px;
+	line-height: 10px;
+	margin-top: 12px;
+}
+#s2id_e1, #s2id_e2, #s2id_e3, #s2id_e4, #s2id_e5, #s2id_e6, #s2id_e7, #s2id_e8 {
+	margin-left: 0px;
+	margin-bottom: 3px;
+}
+.select2-results .select2-result-label {
+  font-size: 0.8em;
+  line-height: normal;
+}
+.techsearchbox {
+	background-color: #003A5C;
+	/* background-color: #F7D534; */
+	min-height: 209px;
+	position: relative;
+	min-height: 315px;
+	background-image: url(../img/jackson-tech-search-back.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.techsearchbox h2 {
+	background-color: #7F9CAD;
+	outline: solid 7px #7F9CAD;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-left: 1px;
+	color: #FFF;
+}
+.techsearchbox h2 strong {
+	color: #003A5C;
+}
+.newsbox {
+	background-color: #F7D534;
+	min-height: 209px;
+	position: relative;
+	background-image: url(../img/jackson-news-back.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+.row.special {
+	margin-left: -15px;
+}
+.bigbanner {
+	background-color: #003A5C;
+	min-height: 415px;
+	text-align: right;
+	color: #FFF;
+	padding: 0px;
+}
+.bigbanner h2 {
+	padding: 0px;
+	margin: 0px;
+	line-height: normal;
+	font-weight: 300;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.bigbanner h3 {
+	font-family: 'Open Sans', sans-serif;
+	padding: 0px;
+	margin: 0px;
+	line-height: normal;
+	font-weight: 300;
+	font-size: 2.3em;
+	margin-bottom: 20px;
+	margin-left: 10%;
+}
+.bigbanner h4 {
+	padding: 0px;
+	margin: 0px;
+	line-height: normal;
+	font-weight: 300;
+	font-size: 1.3em;
+	margin-top: 57px;
+	margin-left: 50%;
+	width: 50%;
+}
+.bigbanner p {
+  margin-top: 5px;
+  font-size: 1em;
+  line-height: 1.1em;
+  margin-left: 8%;
+}
+.innercontent.bigbanner .btn {
+	margin-top: 150px;
+}
+.login {
+	background-color: #ECECED;
+	color: #406B85;
+	min-height: 75px;
+	padding: 7px;
+	background-image: url(../img/login-back-big.gif);
+	background-repeat: no-repeat;
+}
+.login h2 {
+	font-size: 0.85em;
+	text-align: right;
+}
+.innercontent.login #loginbox {
+	margin-left: 6%;
+	margin-top: 4%;
+	position: relative;
+}
+.innercontent.login #loginbox .form-inline {
+	padding: 0px;
+	margin: 0px;
+	text-align: right;
+	margin-left: 0px;
+	float: right;
+	width: 215px;
+	margin-right: -2px;
+}
+.innercontent.login #loginbox p {
+	font-size: 0.75em;
+	padding: 0px;
+	margin: 0px;
+	text-align: right;
+}
+.innercontent.login #loginbox p strong {
+	font-size: 1.4em;
+}
+.innercontent.login #loginbox p a {
+	font-weight: normal;
+	color: #406B85;
+	margin-left: 20px;
+	position: absolute;
+	top: 2px;
+	left: 0px;
+	text-align: left;
+}
+.inner3column {
+	padding: 0px;
+	margin-bottom: 5px;
+	color: #8A9583;
+	line-height: 1em;
+}
+.inner3column #special {
+	padding-left: 5px;
+}
+.span12.footer {
+	min-height: 110px;
+	background-color: #003A5C;
+	position: relative;
+	margin-bottom: 10px;
+}
+.span12.footer .innercontent.footercontent {
+	margin: 0px;
+	padding: 7px 7px 7px 7px;
+}
+.span12.footer h2 {
+	color: #003A5C;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	line-height: normal;
+}
+.span12.footer a {
+	font-weight: normal;
+	color: #95D8F7;
+}
+.span12.footer a:hover {
+	color: #D2E45D;
+}
+.span12.footer h3 {
+	color: #E1ECE3;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	line-height: normal;
+	font-weight: normal;
+	margin: 10px 0px 0px 0px;
+}
+.span12.footer .innercontent.footercontent h3 #footercopyright { /* ADDING THIS INTO BOB'S 11.02am 28/02/14 */
+	color: #95D8F7;
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+}
+
+.span12.footer #bsilogo { /* ADDED 160414 */
+	position: absolute;
+	bottom: 0px;
+	right: 5px;
+	text-align: center;
+	font-size: 0.8em;
+}
+.span12.footer #bsilogo.eulogo {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  text-align: center;
+}
+
+/* Additional footer stuff added 060614 for SmartPhone size */
+.span12.footer .links {
+	min-height: 10px;
+	margin-bottom: 17px;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.innercontent.searchresults {
+	padding: 0px;
+	min-height: 654px;
+	position: relative;
+	padding-bottom: 30px;
+}
+.searchresults h2 {
+	background-color: #003A5C;
+	outline: solid 7px #003A5C;
+	padding-bottom: 12px;
+	padding-top: 3px;
+	padding-left: 1px;
+	margin: 7px;
+	height: 34px; /* was 40px, reduced to line up with shifted "find by code" box */
+}
+.searchresults h2 strong {
+	font-size: 0.65em;
+	font-weight: normal;
+	line-height: normal;
+	display: block;
+}
+.searchresults h5 {
+	background-color: #7F9CAD;
+	outline: solid 7px #7F9CAD;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 2px;
+	font-size: 0.75em;
+	font-weight: normal;
+	line-height: normal;
+	margin-left: 7px;
+	margin-right: 7px;
+	height: 14px;
+}
+.searchresults h5 a {
+	font-weight: normal;
+	color: #FFF;
+}
+.searchresults #table {
+	display: table;
+	margin-top: 12px;
+	width: 100%;
+	font-size: 0.7em;
+	color: #003A5C;
+	line-height: 1.5em;
+	border-collapse: collapse;
+}
+.searchresults #table.columns {
+	margin-top: 0px;
+}
+.searchresults .row {
+	display: table-row;
+}
+.searchresults .row.header {
+	background-color: #CAEBFB;
+	color: #FFF;
+}
+.searchresults .row.header.columns {
+	height: 40px;
+}
+.searchresults .row.header .cell {
+	padding: 3px 5px;
+}
+.searchresults .row.fixedheight {
+	height: 72px;
+}
+.searchresults .row.fixedheight.columns {
+	height: 49px;
+	border-top: solid 6px #FFF;
+}
+.searchresults .row.fixedheight.alt {
+	border-top: solid 6px #FFF;
+}
+.searchresults .row.darker {
+	background-color: #DBE8D6;
+}
+.searchresults .row.code {
+	white-space: nowrap;
+}
+.searchresults .cell {
+	display: table-cell;
+	padding: 5px;
+	border-right: solid 2px #FFF;
+}
+.searchresults .cell.columns {
+	border-right: solid 0px #FFF;
+	color: #003A5C;
+}
+.searchresults .cell.product {
+	width: 52%;
+}
+.searchresults .cell.price {
+	border-right: solid 0px #FFF;
+}
+.searchresults .cell.price a, .searchresults .cell.columns a {
+	float: right;
+}
+.searchresults .btn {
+  padding: 0px 3px;
+  line-height: 17px;
+}
+
+.span12.prodindextitle {
+	background-color: #ECECED;
+	min-height: 35px; /* updated from 55px by MJWEBB 130315 */
+	margin-top: -7px;
+	position: relative;
+}
+.innercontent.prodindextitle h2 {
+	color: #406B85; /* updated from #8A9583 by MJWEBB 130315 */
+	font-size: 1.5em; /* added by MJWEBB 130315 */
+	font-weight: 800; /* added by MJWEBB 130315 */
+	text-align: center; /* added by MJWEBB 130315 */
+	padding-left: 7px;
+	padding-top: 7px;
+}
+.span12.innercontent.prodindextitle { /* updated from span9 by MJWEBB 130315 */
+	padding: 0px;
+}
+.span12.prodindextitle #prodindexinfo {
+	font-size: 0.7em;
+	text-align: center; /* updated from right by MJWEBB 130315 */
+	line-height: normal;
+	padding-top: 0px; /* updated from 10px by MJWEBB 130315 */
+	padding-bottom: 10px; /* added by MJWEBB 130315 */
+	width: 100%; /* added by MJWEBB 130315 */
+}
+.span12.prodindextitle #prodindexinfo a {
+	font-weight: normal;
+	margin-right: 0px; /* padding into margin 12/03/15 - 20px into 0px 16/03/15 now that it's sitting central under title */
+}
+.span12.prodindextitle #prodindexinfo strong {
+	font-weight: normal;
+	color: #406B85;
+	padding-left: 20px; /* padding right turned into left 16/03/15 now that it's sitting to the right of the tech info button */
+}
+.span2.nomarginfirst.targetspeciescontainer {
+	min-height: 680px;
+	background-color: #ECECED;
+	background-image: url(../img/targetspecies-background.gif);
+	background-repeat: repeat-y;
+	background-position: right top;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFF;
+}
+.innercontent.targetspecies {
+	color: #406B85;
+	background-color: #003A5C; /* was #ECECED */
+	padding: 0px;
+}
+.innercontent.targetspecies .speciestitle, .innercontent.targetspecies .species {
+	font-size: 0.8em;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #FFF;
+	border-bottom-color: #CCC;
+	background-color: #ECECED;
+	width: 80%;
+	line-height: normal;
+	padding-top: 6px;
+	padding-right: 7px;
+	padding-bottom: 6px;
+	padding-left: 7px;
+}
+.innercontent.targetspecies .speciestitle strong, .innercontent.targetspecies .species strong {
+	font-weight: normal;
+}
+.innercontent.targetspecies .species.chosen {
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #9FACA3;
+	border-bottom-color: #333;
+	background-color: #003A5C;
+	color: #FFF;
+}
+.innercontent.targetspecies .speciestitle {
+	background-color: #7F9CAD;
+	color: #FFF;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #406B85;
+}
+.innercontent.catalogue {
+	border: solid 1px red;
+	color: #F00;
+}
+.span10.nomargin.cataloguebox {
+	margin-left: 8px;
+	height: 580px; /* was 605px prior to Matt's amend of custom scrollbar - see BB Issue 519 */
+	overflow: auto;
+	overflow-y: scroll;
+  border-top: 2px solid #a0a0a0;
+}
+.cataloguecontainer {
+    background-color: white!important;
+    border-right: solid 1px #e4e4e4;
+}
+
+.span6.nomargin.righthand {
+	overflow: hidden;
+	width: 438px; /* UPDATE2 08/09/16 - See BB Issue 474 for dealing with zoomed out browsers and pixel width fluctuations, was 446px...........UPDATE (old): was 450, amended to 446 on 27/01/15 */
+}
+.span6.nomargin.fixedright {
+	overflow: auto;
+	width: 438px; /* UPDATE 08/09/16 - See BB Issue 474 for dealing with zoomed out browsers and pixel width fluctuations, was 450px */
+}
+
+.btn {
+  -webkit-border-radius: 1px;
+     -moz-border-radius: 1px;
+          border-radius: 1px;
+}
+.btn-orange {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #faa732;
+  *background-color: #f89406;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  border-color: #f89406 #f89406 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active,
+.btn-orange.active,
+.btn-orange.disabled,
+.btn-orange[disabled] {
+  color: #ffffff;
+  background-color: #f89406;
+  *background-color: #df8505;
+}
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  -webkit-border-radius: 1px;
+     -moz-border-radius: 1px;
+          border-radius: 1px;
+}
+
+/* Original Lime Coloured EU Buttons (commented out here) - Converted to US Version Of Lime, Burgundy (below)
+.btn-lime {
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #98AD40;
+  *background-color: #98AD40;
+  background-image: -moz-linear-gradient(top, #C0DB3C, #98AD40);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#C0DB3C), to(#98AD40));
+  background-image: -webkit-linear-gradient(top, #C0DB3C, #98AD40);
+  background-image: -o-linear-gradient(top, #C0DB3C, #98AD40);
+  background-image: linear-gradient(to bottom, #C0DB3C, #98AD40);
+  background-repeat: repeat-x;
+  border-color: #98AD40 #98AD40 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-lime:hover,
+.btn-lime:focus,
+.btn-lime:active,
+.btn-lime.active,
+.btn-lime.disabled,
+.btn-lime[disabled] {
+  color: #ffffff;
+  background-color: #98AD40;
+  *background-color: #98AD40;
+}
+*/
+
+.btn-lime {
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #750324;
+  *background-color: #750324;
+  background-image: -moz-linear-gradient(top, #98425B, #750324);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#98425B), to(#750324));
+  background-image: -webkit-linear-gradient(top, #98425B, #750324);
+  background-image: -o-linear-gradient(top, #98425B, #750324);
+  background-image: linear-gradient(to bottom, #98425B, #750324);
+  background-repeat: repeat-x;
+  border-color: #750324 #750324 #98425B;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#98425B', endColorstr='#750324', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-lime:hover,
+.btn-lime:focus,
+.btn-lime:active,
+.btn-lime.active,
+.btn-lime.disabled,
+.btn-lime[disabled] {
+  color: #ffffff;
+  background-color: #750324;
+  *background-color: #750324;
+}
+
+.btn-bottlegreen {
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #003A5C;
+  *background-color: #003A5C;
+  background-image: -moz-linear-gradient(top, #406B85, #003A5C);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#406B85), to(#003A5C));
+  background-image: -webkit-linear-gradient(top, #406B85, #003A5C);
+  background-image: -o-linear-gradient(top, #406B85, #003A5C);
+  background-image: linear-gradient(to bottom, #406B85, #003A5C);
+  background-repeat: repeat-x;
+  border-color: #003A5C #003A5C #406B85;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#406B85', endColorstr='#003A5C', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-bottlegreen:hover,
+.btn-bottlegreen:focus,
+.btn-bottlegreen:active,
+.btn-bottlegreen.active,
+.btn-bottlegreen.disabled,
+.btn-bottlegreen[disabled] {
+  color: #ffffff;
+  background-color: #003A5C;
+  *background-color: #003A5C;
+}
+
+.btn-jireblue {
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #036599;
+  *background-color: #036599;
+  background-image: -moz-linear-gradient(top, #00B2D1, #036599);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00B2D1), to(#036599));
+  background-image: -webkit-linear-gradient(top, #00B2D1, #036599);
+  background-image: -o-linear-gradient(top, #00B2D1, #036599);
+  background-image: linear-gradient(to bottom, #00B2D1, #036599);
+  background-repeat: repeat-x;
+  border-color: #036599 #036599 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00B2D1', endColorstr='#036599', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-jireblue:hover,
+.btn-jireblue:focus,
+.btn-jireblue:active,
+.btn-jireblue.active,
+.btn-jireblue.disabled,
+.btn-jireblue[disabled] {
+  color: #ffffff;
+  background-color: #036599;
+  *background-color: #036599;
+}
+
+.btn-winered {
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #9c2555;
+  *background-color: #9c2555;
+  background-image: -moz-linear-gradient(top, #9c2555, #6B1425);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9c2555), to(#6B1425));
+  background-image: -webkit-linear-gradient(top, #9c2555, #6B1425);
+  background-image: -o-linear-gradient(top, #9c2555, #6B1425);
+  background-image: linear-gradient(to bottom, #9c2555, #6B1425);
+  background-repeat: repeat-x;
+  border-color: #9c2555 #9c2555 #6B1425;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9c2555', endColorstr='#6B1425', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-winered:hover,
+.btn-winered:focus,
+.btn-winered:active,
+.btn-winered.active,
+.btn-winered.disabled,
+.btn-winered[disabled] {
+  color: #ffffff;
+  background-color: #6B1425;
+  *background-color: #6B1425;
+}
+
+.btn-logogreen {
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #008748;
+  *background-color: #008748;
+  background-image: -moz-linear-gradient(top, #01A357, #008748);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#01A357), to(#008748));
+  background-image: -webkit-linear-gradient(top, #01A357, #008748);
+  background-image: -o-linear-gradient(top, #01A357, #008748);
+  background-image: linear-gradient(to bottom, #01A357, #008748);
+  background-repeat: repeat-x;
+  border-color: #016938 #016938 #016938;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01A357', endColorstr='#008748', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-logogreen:hover,
+.btn-logogreen:focus,
+.btn-logogreen:active,
+.btn-logogreen.active,
+.btn-logogreen.disabled,
+.btn-logogreen[disabled] {
+  color: #ffffff;
+  background-color: #008748;
+  *background-color: #008748;
+}
+
+/* BELOW IS CODE TO STYLE CATALOGUE CONTENT - at it's FULL SIZE */
+.cataloguecontainer {
+	background-color: #ECECED; /* was #003A5C */
+	height: 680px;
+	margin-bottom: 5px;
+}
+.blank_row {
+	height: 10px !important;
+}
+.fixedleft {
+	font-size: 0.75em;
+	line-height: 1.3em;
+	font-weight: bold;
+	border-right: solid 3px #FFF;
+	border-top: solid 1px #FFF;
+	color: #FFF;
+}
+.fixedleft table td {
+	padding-top: 4px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFF;
+}
+.fixedleft table td.headerrow {
+	background-color: #003A5C;
+	border-left: 0px solid #FFF;
+	border-right: 0px solid #FFF;
+	height: 46px;
+}
+.fixedleft table .blank_row td {
+	background-color: #750324; /* was #D4E336; (lime) - is now burgundy */
+	border-top: solid 3px #FFF;
+	/* border-left: solid 1px #FFF; Commented out 16th Dec 2014 */
+}
+.fixedright {
+	overflow: auto;
+	font-size: 0.75em;
+	line-height: 1.3em;
+	font-weight: bold;
+	border-right: solid 0px #FFF;
+	border-bottom: solid 0px #FFF;
+	border-top: solid 1px #FFF;
+	margin-right: 0px;
+	color: #FFF;
+}
+.fixedright table td {
+	padding-top: 4px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFF;
+	background-color: #003a5c;
+}
+.fixedright table td.headerrow {
+	background-color: #003A5C;
+	height: 46px;
+}
+.fixedright table td.headerrow div {
+	width: 88px; /* WAS 84px, AMENDED 18/12/14. ALSO AMENDED LINE 2676 to 88 */
+}
+.fixedright table .blank_row td {
+	border-top: solid 3px #FFF;
+
+}
+#lefthand {
+	border-right: solid 3px #FFF;
+}
+#lefthand table td {
+	padding-top: 1px;
+	padding-right: 10px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+	height: 39px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFF;
+	background-color: #D9E2E7;
+	font-size: 0.7em;
+	line-height: 1.2em;
+}
+#lefthand table td.subcatrow {
+	background-color: #BFCED6;
+	color: #003A5C;
+	font-weight: bold;
+	height: 17px;
+	font-size: 0.8em;
+}
+#lefthand table .blank_row td {
+	height: 10px !important;
+	padding: 0px;
+	margin: 0px;
+	background-color: #750324; /* was #D4E336; (lime) - now burgundy */
+}
+#lefthand table td.whiterow, .righthand table td.whiterow {
+	background-color: #FFF;
+}
+.righthand table td {
+	padding-top: 1px;
+	padding-right: 0px;
+	padding-bottom: 1px;
+	padding-left: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+	height: 39px;
+	text-align: center;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFF;
+	background-color: #D9E2E7;
+	font-size: 0.7em;
+	line-height: 1.2em;
+}
+/*.righthand table td div {
+	width: 84px;
+} */
+.righthand table td.subcatrow {
+	background-color: #BFCED6;
+	color: #003A5C;
+	font-weight: bold;
+	height: 17px;
+}
+.righthand table .blank_row td {
+	height: 10px !important;
+	padding: 0px;
+	margin: 0px;
+	background-color: #003A5C;
+}
+/* ABOVE IS CODE TO STYLE CATALOGUE CONTENT - at it's FULL SIZE */
+
+/* SPOTLIGHT PAGES */
+.span3.thinmargin.spotlightmiddle {
+  width: 227px;
+}
+.span3.spotlightmiddle { /* ADDED 130214 */
+  margin-left: 0px;
+}
+.span6.thinmargin.spotlightcontent {
+  width: 474px;
+}
+.innercontent.spotlighttitle h2 {
+	color: #9AA092;
+	font-size: 1.5em;
+}
+.innercontent.spotlighttitle .currentspotlight {
+	color: #003A5C;
+	font-size: 0.85em;
+	line-height: normal;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 70px;
+	display: block;
+	min-height: 125px;
+	margin-bottom: 0px;
+}
+.innercontent.spotlighttitle .previousspotlight {
+	color: #9AA092;
+	font-size: 0.85em;
+	line-height: normal;
+	font-family: 'Open Sans', sans-serif;
+	border-bottom: solid 1px #CCC;
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+	margin-top: 0px;
+	font-weight: lighter;
+}
+.innercontent.spotlighttitle .previousspot {
+	color: #9AA092;
+	font-size: 0.85em;
+	line-height: normal;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 6px;
+	font-weight: lighter;
+	border-bottom: solid 1px #CCC;
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+}
+.innercontent.spotlighttitle .previousspot a {
+	color: #9AA092;
+	font-weight: lighter;
+}
+.innercontent.spotlighttitle .previousspot a:hover {
+	color: #003A5C;
+}
+.innercontent.spotlightcontent {
+	border-left: solid 1px #CCC;
+}
+.innercontent.spotlightcontent h1 {
+	color: #003A5C;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 0px;
+	padding-top: 0px;
+	line-height: normal;
+	font-size: 1.1em;
+	display: block;
+	min-height: 83px;
+}
+.innercontent.spotlightcontent p {
+	color: #003A5C;
+	font-size: 0.85em;
+	line-height: 1.45em;
+}
+/* END OF SPOTLIGHT PAGES */
+
+.figure {
+	margin-bottom: 0.5em;
+	width: 100%;
+	background-color: #fff;
+	border: solid 3px #EBF2EB;
+}
+.figure img {
+	/* padding: 7px; RMOVED BY MARTIN AS IT WAS FUDGING FIGURES IN STATIC PAGES 040614 */
+	/* max-width: 94%; REMOVED BY MARTIN TO MATCH MY LOCAL 11.08am 28/02/14 */
+}
+.figure .figcaption {
+	font-size: 1em; /* was 0.8em prior to 040619 */
+	font-weight: normal;
+	padding: 7px;
+	display: block;
+	color: #576D59;
+	line-height: 1.45em;
+}
+
+/* NEW PRODUCT PAGES */
+.span3.thinmargin.newprodmiddle {
+  width: 227px;
+}
+.span6.thinmargin.newprodcontent {
+  width: 474px;
+}
+.innercontent.newprodtitle h2 {
+	color: #9AA092;
+	font-size: 1.5em;
+	margin-bottom: 70px;
+}
+.innercontent.newprodtitle .currentnewprod {
+	color: #003A5C;
+	font-size: 0.85em;
+	line-height: normal;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 6px;
+	margin-bottom: 4px;
+	padding-bottom: 4px;
+	border-bottom: solid 1px #CCC;
+}
+.innercontent.newprodtitle .previousnewprod {
+	color: #9AA092;
+	font-size: 0.85em;
+	line-height: normal;
+	font-family: 'Open Sans', sans-serif;
+	border-bottom: solid 1px #CCC;
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+	margin-top: 0px;
+	font-weight: lighter;
+}
+.innercontent.newprodtitle .previousnewprods {
+	color: #9AA092;
+	font-size: 0.85em;
+	line-height: normal;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 6px;
+	font-weight: lighter;
+	border-bottom: solid 1px #CCC;
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+}
+.innercontent.newprodtitle .previousnewprods a {
+	color: #9AA092;
+	font-weight: lighter;
+}
+.innercontent.newprodtitle .previousnewprods a:hover {
+	color: #003A5C;
+}
+.innercontent.newprodcontent {
+	border-left: solid 1px #CCC;
+}
+.innercontent.newprodcontent h1 {
+	color: #003A5C;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 0px;
+	padding-top: 0px;
+	line-height: normal;
+	font-size: 1.1em;
+	display: block;
+	min-height: 83px;
+}
+.innercontent.newprodcontent p {
+	color: #003A5C;
+	font-size: 0.85em;
+	line-height: 1.45em;
+}
+
+.span3.middleblocks1 {
+	width: 232px;
+	margin-left: 15px;
+}
+.span3.middleblocks2 {
+	width: 232px;
+	margin-left: 3px;
+}
+.innercontent.tweetheader {
+	margin-bottom: 0px;
+}
+.tweetheader h2 {
+	background-color: #7F9CAD;
+	outline: solid 7px #7F9CAD;
+	padding-left: 3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #FFF;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	line-height: 1.1em;
+}
+
+/* Search results version 6b */
+.resultsalt6header .results-blank-row {
+	height: 5px;
+}
+.results-probe-name td {
+	border-right: solid 1px #D0D6D1;
+	font-size: 0.7em;
+	line-height: 1.5em;
+}
+.results-blank-row th {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #D0D6D1;
+	font-size: 0.7em;
+}
+.resultsalt6header .results-blank-row th .first {
+	height: 20px;
+	margin-right: 3px;
+}
+.results-probe-name td .first {
+	margin-top: 3px;
+	margin-right: 3px;
+	color: #212F23;
+}
+.results-blank-row th .middle {
+	height: 20px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.results-probe-name td .middle {
+	margin-top: 3px;
+	margin-left: 3px;
+	margin-right: 3px;
+	color: #212F23;
+}
+.results-blank-row th .last {
+	height: 20px;
+	margin-left: 3px;
+}
+.results-probe-name td .last {
+	margin-top: 3px;
+	margin-left: 3px;
+	color: #212F23;
+}
+.results-blank-row th.last {
+	border-right: solid 0px #FFF;
+}
+.results-probe-name td.last {
+	border-right: solid 0px #FFF;
+}
+.results-probe-name td div {
+	margin-bottom: 10px;
+}
+
+.innercontent.searchresults h3 {
+	color: #003A5C;
+	font-weight: normal;
+	font-size: 1.4em;
+	line-height: normal;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 6px;
+	margin-bottom: 5px;
+}
+.innercontent.searchresults h3 .smaller {
+	font-size: 0.7em;
+}
+
+.resultsalt6 .results-blank-row {
+	height: 2px;
+}
+.resultsalt6 .results-blank-row th .first {
+	height: 2px;
+	margin-right: 3px;
+}
+.resultsalt6 .results-blank-row th .middle {
+	height: 2px;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+.resultsalt6 .results-blank-row th .last {
+	height: 2px;
+}
+.short-probe-name td {
+	font-size: 0.7em;
+	line-height: 1.5em;
+	border-right: solid 1px #D0D6D1;
+}
+.short-probe-name td .first {
+	margin-right: 3px;
+	background-color: #58775C;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.short-probe-name td .middle {
+	margin-left: 3px;
+	margin-right: 3px;
+	background-color: #58775C;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.short-probe-name td .last {
+	margin-left: 3px;
+	background-color: #58775C;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.short-blank-row th.last {
+	border-right: solid 0px #FFF;
+}
+.short-probe-name td.last {
+	border-right: solid 0px #FFF;
+}
+.short-probe-name td .product-details { /* AMENDED 080414 */
+	padding-top: 3px;
+	color: #212F23;
+	line-height: 1.7em;
+	min-height: 35px;
+	margin-bottom: 3px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.short-probe-name td .product-details a {
+	color: #FFF;
+	background-color: #8E9E93;
+	display: inline-block;
+	padding: 0px 5px;
+	letter-spacing: 0.1em;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.short-probe-name td .product-code { /* NEW 080414 */
+	font-weight: bold;
+}
+.short-probe-name td a { /* NEW 070414 */
+	display: block;
+	font-weight: normal;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.short-probe-name td a:hover { /* NEW 070414 */
+	text-decoration: none;
+	background-color: #D0D5D1;
+}
+.short-probe-name .first a { /* NEW 080414 */
+  margin-left: 0px;
+}
+.short-probe-name .last a { /* NEW 080414 */
+  margin-right: 0px;
+}
+/* .short-probe-name td .product-details a:hover {
+	background-color: #58775C;
+	text-decoration:none;
+} I "think" this specific styling is now redundant - Martin, M J Webb */
+.results-bottom-padding {
+	height: 15px;
+}
+td .product-details.discontinued {
+	background-color: #DCB2AA;
+	color: #FFF;
+}
+td .product-details.discontinued:hover { /* NEW 080414 */
+	background-color: #E97B65;
+}
+.short-probe-name td .product-details.discontinued a {
+	background-color: #F5E8E6;
+	color: #DCB2AA;
+}
+.short-probe-name td .product-details.discontinued a:hover {
+	background-color: #FFF;
+}
+
+.searchresults .pagination {
+  margin-bottom: 0px;
+  position:  absolute;
+  bottom: 0px;
+}
+.pagination ul > li:first-child > a,
+.pagination ul > li:first-child > span {
+  border-left-width: 1px;
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+}
+.pagination ul > li:last-child > a,
+.pagination ul > li:last-child > span {
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* Code for the actual Product Page */
+.innercontent.productdetails h2 {
+	color: #003A5C;
+	font-weight: 600; /* updated from "bold" by MJWEBB 16/03/15 */
+	margin-bottom: 8px;
+	font-size: 1.3em;
+}
+.innercontent.productdetails h3 {
+	color: #406B85; /* was 4E7052 for the EU Green. Now matches US Blue */
+	margin: 0px;
+	padding: 0px;
+	line-height: normal;
+	font-weight: 300;
+	font-size: 1.3em;
+}
+.btn-primary {
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #003A5C;
+  *background-color: #003A5C;
+  background-image: -moz-linear-gradient(top, #406B85, #003A5C);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#406B85), to(#003A5C));
+  background-image: -webkit-linear-gradient(top, #406B85, #003A5C);
+  background-image: -o-linear-gradient(top, #406B85, #003A5C);
+  background-image: linear-gradient(to bottom, #406B85, #003A5C);
+  background-repeat: repeat-x;
+  border-color: #003A5C #003A5C #406B85;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#406B85', endColorstr='#003A5C', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  color: #ffffff;
+  background-color: #003A5C;
+  *background-color: #003A5C;
+}
+.btn-group > .btn:first-child {
+  margin-left: 0;
+  -webkit-border-bottom-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  -webkit-border-top-left-radius: 1px;
+  border-top-left-radius: 1px;
+  -moz-border-radius-bottomleft: 1px;
+  -moz-border-radius-topleft: 1px;
+}
+.btn-group > .btn:last-child, .btn-group > .dropdown-toggle {
+  -webkit-border-top-right-radius: 1px;
+  border-top-right-radius: 1px;
+  -webkit-border-bottom-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  -moz-border-radius-topright: 1px;
+  -moz-border-radius-bottomright: 1px;
+}
+.btn-group.open .btn-primary.dropdown-toggle {
+  background-color: #4D7F58;
+}
+.dropdown-menu.conjugates > li > a {
+  line-height: 12px;
+  font-size: 11px;
+  white-space: normal;
+  width: 125px;
+  border-bottom: solid 1px #F3F3F3;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #576D59;
+}
+
+.dropdown-menu.conjugates > li > a:hover {
+  color: #fff;
+}
+
+.innercontent.productdetails hr {
+	background-color: #CCCCCC;
+	height: 1px;
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+.innercontent.productdetails h4 {
+	color: #1F2D21;
+	font-weight: 200;
+	font-size: 1em;
+	margin-top: 0px;
+	line-height: 1.3em;
+}
+.innercontent.productdetails h4 strong {
+	color: #406B85;
+	font-size: 0.9em;
+	font-weight: normal;
+}
+.innercontent.productdetails h5 {
+	color: #202E22;
+	font-size: 0.85em;
+	font-weight: 400;
+	line-height: 1.4em;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.innercontent.productdetails .warning {
+	background-color: #E0E0E1;
+	padding: 6px;
+	margin-top: 10px;
+	font-size: 0.8em;
+	color: #406B85;
+}
+.innercontent.productdetails {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.innercontent.productdetails2 {
+  background-color: #BFCED6;
+  min-height: 315px;
+  color: #7F9CAD;
+}
+.productdetails2 h2 {
+  background-color: #003A5C;
+  outline: solid 7px #003A5C;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-left: 1px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.productdetails2 h2 strong {
+  color: #CAEBFB;
+}
+.productdetails2 h2 strong a, .productdetails2 h2 strong a:hover {
+  color: #CAEBFB;
+}
+.units {
+	color: #202E22;
+	font-size: 1.2em;
+	font-weight: 200;
+	float: left;
+}
+.units strong {
+	color: #003A5C;
+	font-weight: normal;
+	font-size: 0.8em;
+	line-height: normal;
+}
+.price {
+	color: #202E22;
+	font-size: 1.2em;
+	font-weight: 200;
+	margin-left: 99px;
+	margin-bottom: 5px;
+}
+.price strong {
+	color: #003A5C;
+	font-weight: normal;
+	font-size: 0.8em;
+	line-height: normal;
+}
+.quantity strong {
+  color: #003A5C;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: normal;
+}
+.innercontent.productdetails2 #item-quantity {
+	width: 120px;
+	margin-left: 15px;
+}
+.productdetails2 .btn {
+  padding: 1px 12px;
+}
+.delivery {
+	color: #202E22;
+	font-size: 1.2em;
+	font-weight: 200;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.delivery strong {
+	color: #003A5C;
+	font-weight: normal;
+	font-size: 0.8em;
+	line-height: normal;
+}
+.innercontent.productdetails2 hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.techhelp {
+  background-color: #CAEBFB;
+  min-height: 67px;
+}
+.techhelp h2 {
+	color: #003A5C;
+}
+.techhelp h2 strong {
+  color: #7F9CAD;
+}
+.techhelp .btn {
+  padding: 1px 0px;
+  margin-top: 12px;
+  width: 100%;
+}
+.innercontent.techhelp .btn.btn-bottlegreen.question { /* ADDED 070414 */
+	width: 102px;
+	line-height: 1.1em;
+	font-weight: normal;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-size: 0.9em;
+}
+.span9.tabs {
+	margin-top: 10px;
+}
+.span3.nomargin.tabs.widerlast { /* 4th tab on prod page (with tall filter) which is wider than first 3 tabs */
+	width: 237px;
+}
+.span9.tabs .nav.nav-tabs {
+	margin-bottom: 0px;
+}
+.span9.tabs .nav.nav-tabs .span2.nomarginfirst {
+	margin-left: 0px;
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+  color: #FFF;
+  cursor: default;
+  background-color: #00A35A;
+  border: 2px solid #00A35A;
+  border-bottom-color: transparent;
+  font-weight: normal;
+}
+.nav-tabs {
+  border-bottom: 0px solid #00A35A;
+}
+.nav-tabs > li > a {
+  background-color: #E0E0E1;
+  border-top: 2px solid #E0E0E1;
+  border-left: 2px solid #E0E0E1;
+  border-right: 2px solid #E0E0E1;
+  border-bottom: 1px solid #E0E0E1;
+  font-weight: normal;
+  color: #8F9E92;
+}
+.nav-tabs > li > a:hover {
+  background-color: #CECECF;
+  border-top: 2px solid #CECECF;
+  border-left: 2px solid #CECECF;
+  border-right: 2px solid #CECECF;
+  border-bottom: 1px solid #CECECF;
+  font-weight: normal;
+  color: #FFF;
+}
+.nav-tabs > li > a.last {
+  margin-right: 0px;
+}
+.span9.tabs .tab-content {
+	border: solid 2px #00A35A;
+	padding: 20px 20px 40px 20px;
+	margin-bottom: 10px;
+	font-size: 0.85em;
+	line-height: 1.5em;
+}
+.span9.tabs p {
+	/* font-size: 0.85em; COMMENTED OUT 13/02/14 FOR THE IMAGE & REFERENCE TAB */
+	line-height: 1.5em;
+}
+.span9.tabs p#finalwarning {
+	margin-top: 18px;
+	margin-bottom: 18px;
+	font-size: 0.7em;
+}
+.span9.tabs .tab-content #usage strong {
+	color: #4D7052;
+}
+.span4.prodtabs {
+	margin-left: 0px;
+	width: 300px;
+	margin-right: 36px;
+}
+.span4.prodtabs.last {
+	margin-right: 0px;
+}
+.span9.tabs .tab-content #conjugate strong {
+	color: #4D7052;
+}
+.span9.tabs .tab-content #conjugate h3 {
+	font-size: 1.2em;
+	font-weight: normal;
+	line-height: normal;
+	padding: 0px;
+	margin: 0px;
+}
+.span9.tabs .tab-content #conjugate img {
+	margin-top: 10px;
+}
+.span9.tabs .tab-content #images #piclegend {
+	background-color: #CAEBFB;
+	padding: 15px;
+	position: relative;
+}
+.tabs #collapseFour #piclegend {
+	background-color: #CAEBFB;
+	padding: 15px;
+	position: relative;
+  float: right;
+}
+.tabs #collapseFour #piclegend:before
+{
+	top: 15px;
+	background: #CAEBFB;
+	left: -0px;
+	width: 20px;
+	height: 20px;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
+	position: absolute;
+	content: '';
+	pointer-events: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.span9.tabs .tab-content #images #piclegend:before
+{
+	top: 15px;
+	background: #CAEBFB;
+	left: -0px;
+	width: 20px;
+	height: 20px;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
+	position: absolute;
+	content: '';
+	pointer-events: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.span4.prodtabs.last #citation {
+	margin-top: 15px;
+}
+.span4.prodtabs.last #citation strong {
+	color: #4D7052;
+}
+.productdetails2 .btn.msds {
+	width: 88%;
+}
+.productdetails2 .btn.specsheets {
+	width: 189px;
+}
+.disclaimer {
+	font-size: 0.7em;
+	margin-bottom: 10px;
+}
+
+/* Styling for Shopping Basket */
+.shoppingbasket {
+  background-color: #ECECED;
+  min-height: 66px;
+  color: #7F9CAD;
+  margin-bottom: 3px;
+}
+.shoppingbasket h2 {
+	background-color: #003A5C;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-left: 1px;
+	color: #fff;
+	outline: solid 7px #003A5C;
+}
+.shoppingbasket h2 strong {
+  color: #CAEBFB;
+}
+.shoppingbasket #basketleft {
+	width: 150px;
+	float: left;
+	margin-top: 15px;
+}
+.shoppingbasket #basketleft a {
+	font-weight: normal;
+	font-size: 0.85em;
+}
+
+.shoppingbasket .basketright {
+    width: 160px;
+    float: right;
+    background-color: #95D8F7; /* was CAEBFB, but changed to match USA colour */
+    margin-top: 5px;
+    padding: 10px;
+    margin-right: -7px;
+}
+
+.basketright .btn {
+    padding: 1px 0px;
+    width: 100%;
+}
+
+.basketrule {
+	padding: 0px;
+	margin: 0px;
+	border-top: 1px solid #CCC;
+}
+.basketcontent {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	color: #202E22;
+	margin-bottom: 3px;
+}
+.basketcontent a {
+	font-weight: normal;
+}
+.basketcontent .code a {
+	text-decoration: underline;
+}
+.basketcontent table tr th {
+	background-color: #406B85; /* was 003A5C, but swapped to match USA */
+	font-weight: normal;
+	font-size: 0.85em;
+	border-right: solid 1px #FFF;
+	padding: 5px;
+	color: #FFF;
+}
+.basketcontent table tr td {
+	padding: 5px;
+	height: 40px;
+	border-right: solid 1px #FFF;
+}
+.innercontent.basketcontent table tr .description {
+	font-size: 0.85em;
+	color: #4E7052;
+}
+.basketcontent table input {
+  width: 40px;
+  margin-bottom: 0px;
+}
+input[type="number"] {
+  padding: 0px 2px;
+}
+.basketcontent table .colouredrow {
+	background-color: #F1F1F2;
+	border-bottom: solid 1px #FFF;
+}
+.span12 .innercontent.finaltotal {
+	text-align: right;
+	color: #003A5C;
+	font-size: 1.3em;
+}
+.span12.basketminheight {
+	min-height: 550px;
+}
+
+/* NEW CODE 09/07/14 for reformatted basket, using unordered list instead of a table */
+ul.basketcontents {
+margin: 0;
+padding: 0;
+width: 100%;
+}
+.basketcontents.header li {
+background-color: #406B85;
+color: #FFF;
+}
+.basketcontents li {
+display: inline-block;
+list-style-type: none;
+text-align: left;
+font-size: 0.85em;
+float: left;
+margin-right: 1px;
+}
+.basketcontents.header li .basketcontentspadding {
+	padding: 4px 10px;
+	display: block;
+}
+.basketcontents li .basketcontentspadding {
+	padding: 8px 10px;
+	display: block;
+}
+.basketcontents li.basketcontentsremove {
+width: 7%;
+}
+.basketcontents li.basketcontentscode {
+width: 11%;
+}
+.basketcontents li.basketcontentsproduct {
+width: 44.1%;
+}
+.basketcontents li.basketcontentsquantity {
+width: 18%;
+}
+.basketcontents li.basketcontentsprice {
+width: 9%;
+text-align: right;
+}
+.basketcontents li.basketcontentstotal {
+width: 10%;
+text-align: right;
+}
+.basketcontents li input {
+width: 40px;
+margin-bottom: 0px;
+}
+.basketcontents li.basketcontentsremove .btn {
+margin-top: 6px;
+}
+
+#confirmation .basketcontents li.basketcontentscode {
+width: 13%;
+}
+#confirmation .basketcontents li.basketcontentsprice {
+width: 12%;
+}
+#confirmation .basketcontents li.basketcontentstotal {
+width: 12%;
+}
+/* END OF NEW CODE 09/07/14 */
+
+.shoppingbasket.quotationPage { /* added 19082020 */
+  min-height: 6px;
+}
+.shoppingbasket.quotationPage h2 { /* added 19082020 */
+  margin-bottom: 0px; /* was 15px */
+}
+#basketright.quotationPage { /* added 19082020 */
+    position: relative;
+    margin-top: 8px;
+}
+#basketright.quotationPage #basketright-btns { /* added 19082020 */
+  position: absolute;
+  right: 0;
+}
+
+.basketcontent.quotesTable #savedproducts tr th { /* added 20082020 */
+  width: 31%!important;
+}
+.basketcontent.quotesTable #savedproducts tr td .btn { /* added 20082020 */
+  padding: 2px 10px;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+.basketcontent.quotesTable #savedproducts tr td .btn .fad,
+.basketcontent.quotesTable #savedproducts tr td .btn .fa-duotone,
+.basketcontent.quotesTable #savedproducts tr td .btn .fas,
+.basketcontent.quotesTable #savedproducts tr td .btn .fa-solid,
+.basketcontent.quotesTable #savedproducts tr td .btn .far,
+.basketcontent.quotesTable #savedproducts tr td .btn .fa-regular,
+.basketcontent.quotesTable #savedproducts tr td .btn .fal,
+.basketcontent.quotesTable #savedproducts tr td .btn .fa-light { /* added 20082020 and edited 16022022 */
+  margin-right: 4px;
+}
+.basketcontent.quotesTable #savedproducts tr th:nth-of-type(1) { /* added 20082020 */
+  width: 7%!important;
+}
+
+/* Registration page */
+.span9.tabs.registration .tab-content, .span6.tabs.registration .tab-content {
+	border-right-width: 0px;
+	border-top-width: 1px;
+	border-left-width: 0px;
+	border-right-style: solid;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-right-color: #ECECED;
+	border-top-color: #CCC;
+	border-left-color: #ECECED;
+	padding: 20px 20px 40px 20px;
+	margin-bottom: 0px;
+	font-size: 0.85em;
+	line-height: 1.5em;
+	background-color: #ECECED;
+}
+.span9.tabs .nav.nav-tabs, .span6.tabs .nav.nav-tabs {
+  margin-bottom: 0px;
+}
+.span9.tabs .nav.nav-tabs {
+  font-size: 12px;
+}
+#customer-registration legend#registration {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.1em;
+	font-weight: 300;
+	background-color: #FFF;
+	outline: solid 7px #FFF;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-left: 1px;
+	color: #003A5C;
+	margin-left: 7px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	border-bottom: 0px solid #003A5C;
+}
+.span6.thinmargin.registration {
+  width: 471px;
+  margin-left: 3px;
+}
+#customer-registration #regborder, #customer-details #regborder {
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #9FACA3;
+	border-bottom-color: #9FACA3;
+	border-left-color: #9FACA3;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #ECECED;
+}
+.captcha { /* STOLEN FROM BOB'S RWS.CSS FILE */
+  margin-left: 183px;
+  margin-bottom: 10px;
+}
+#shipping-address fieldset .label {
+	margin-left: 80px;
+	margin-bottom: 15px;
+}
+#shipping-address fieldset .control-group {
+	margin-bottom: 5px;
+}
+#customer-registration #regborder .form-actions, #customer-details #regborder .form-actions {
+    background-color: #7F9CAD;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-top: solid 7px #FFF;
+    padding-left: 200px;
+}
+#customer-details .form-actions {
+  margin-top: 0px;
+}
+
+/* Login Page */
+.innercontent.logintitle h2 {
+  color: #9AA092;
+  font-size: 1.5em;
+}
+.logintitle {
+  color: #202E22;
+  padding-right: 0px;
+}
+.logintitle form {
+	margin-top: 8px;
+}
+.logintitle .form-horizontal #form-content {
+	padding-top: 30px;
+	padding-bottom: 38px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #ECECED;
+	margin-bottom: 7px;
+}
+.logintitle .form-actions {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #7F9CAD;
+  border-top: 0px solid #e5e5e5;
+  padding-left: 200px;
+  padding-right: 20px;
+}
+
+/* Tech Centre */
+.innercontent.techcentrecontent {
+	border-left: solid 1px #CCC;
+}
+.techcentrecontent h1 {
+  color: #003A5C;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0px;
+  padding-top: 0px;
+  line-height: normal;
+  font-size: 1.1em;
+  display: block;
+}
+.techcentrecontent p {
+  font-size: 0.85em;
+  line-height: 1.45em;
+  color: #202E22;
+}
+.techcentrecontent p a {
+	font-weight: normal;
+	color: #202E22;
+}
+.techcentrecontent p a:hover {
+  color: #003A5C;
+}
+.techcentreblock {
+  background-color: #ECECED;
+  padding: 10px;
+  margin-left: -7px;
+  margin-bottom: 10px;
+}
+
+/* Tech Centre NEW VERSION 18/02/14 to fill full page width f-cy3-5-us example */
+#techpagecontents {
+	padding-left: 7px;
+	padding-top: 0px;
+	padding-right: 0px;
+}
+#techpagecontents h1 {
+	background-color: #003A5C;
+	outline: solid 7px #003A5C;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-left: 1px;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: normal;
+	margin-top: 7px;
+	margin-right: 8px;
+	margin-bottom: 20px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.1em;
+}
+#techpagecontents h2 {
+	color: #003A5C;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 0px;
+	padding-top: 0px;
+	line-height: normal;
+	font-size: 1.5em;
+	display: block;
+	min-height: 30px;
+	margin-bottom: 7px;
+}
+#techpagecontents p {
+	font-size: 1em; /* was 0.85em prior to 20/03/19 */
+	line-height: 1.45em;
+	color: #202E22;
+	/*text-align: justify; - commented out 14/06/19 */
+}
+#techpagecontents ol li {
+	font-size: 1em; /* was 0.85em prior to 23/05/19 */
+	line-height: 1.45em;
+}
+#techpagecontents ul li {
+	font-size: 1em; /* was 0.85em prior to 23/05/19 */
+	line-height: 1.45em;
+}
+.span2.spotlightmiddle {
+	min-height: 368px;
+}
+#techpagecontents h3 {
+	color: #7F9CAD;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 0px;
+	padding-top: 0px;
+	line-height: normal;
+	font-size: 1.2em;
+	margin-bottom: 14px;
+	font-weight: 300;
+}
+#techpagecontents h1 strong {
+	color: #CAEBFB;
+}
+#techpagecontents .nav.nav-pills {
+	font-size: 0.8em;
+	margin-bottom: 11px;
+}
+#techpagecontents .nav-pills > li > a {
+  margin-right: 0px;
+}
+#techpagecontents .nav-pills > li > a {
+	background-color: #ECECED;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
+}
+#techpagecontents .nav-tabs > li, .nav-pills > li {
+  float: none;
+  display: inline-block;
+}
+#techpagecontents .nav-tabs:after, .nav-pills:after {
+  clear: none;
+}
+#techpagecontents .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+	color: #FFF;
+	background-color: #7F9CAD;
+}
+#techpagecontents .breadcrumb {
+	margin-left: -7px;
+	margin-bottom: 14px;
+	background-color: #ECECED;
+	font-size: 0.8em;
+	-webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
+}
+#techpagecontents ul.breadcrumb li {
+	font-size: 1em!important;
+}
+#techpagecontents .breadcrumb > li > .divider {
+  padding: 0 2px;
+  color: #999;
+}
+#techpagecontents .jirtable tbody tr th {
+	color: #FFF;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #7F9CAD;
+	border-right-color: #FFF;
+	border-bottom-color: #7F9CAD;
+	border-left-color: #7F9CAD;
+}
+#techpagecontents .jirtable {
+	border: 1px solid #7F9CAD;
+	color: #003A5C;
+	margin-bottom: 10px;
+}
+#techpagecontents .picright {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	float: right;
+}
+#techpagecontents .picleft {
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+#techpagecontents .emailbox {
+	float: right;
+	background-color: #ececed;
+	font-size: 0.85em;
+	line-height: normal;
+	text-align: center;
+	margin-left: 10px;
+}
+#techpagecontents .emailbox td {
+	padding: 10px;
+}
+
+/* HOMEPAGE "SLIDER" CSS */
+.rslides {
+  margin: 0 auto 40px;
+  }
+
+  #slider2,
+  #slider3 {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	margin: 0 auto;
+	}
+
+  .rslides_tabs { /* NEEDED */
+	list-style: none;
+	padding: 0;
+	background: rgba(0,0,0,.25);
+	box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
+	-moz-box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
+	-webkit-box-shadow: 0 0 1px rgba(255,255,255,.3), inset 0 0 5px rgba(0,0,0,1.0);
+	font-size: 18px;
+	list-style: none;
+	margin: 0 auto 0; /* AMENDED */
+	max-width: 466px;
+	padding-top: 13px;
+	padding-bottom: 14px;
+	text-align: center;
+	width: 100%;
+	border-top: solid 5px #FFF;
+	}
+
+  .rslides_tabs li { /* NEEDED */
+	display: inline;
+	float: none;
+	margin-right: 1px;
+	}
+
+  .rslides_tabs a { /* NEEDED */
+	width: auto;
+	line-height: 20px;
+	padding: 9px 20px;
+	height: auto;
+	background: transparent;
+	display: inline;
+	}
+
+  .rslides_tabs li:first-child {
+	margin-left: 0;
+	}
+
+  .rslides_tabs .rslides_here a {
+	background: rgba(255,255,255,.1);
+	color: #fff;
+	font-weight: bold;
+	}
+
+  #slider3-pager a {
+	display: inline-block;
+  }
+
+  #slider3-pager img {
+	float: left;
+  }
+
+  #slider3-pager .rslides_here a {
+	background: transparent;
+	box-shadow: 0 0 0 2px #fff;
+  }
+
+  #slider3-pager a {
+	padding: 0;
+  }
+
+  /* MARTIN */
+  .rslides .caption {
+	display: block;
+	position: absolute;
+	z-index: 2;
+	font-size: 20px;
+	text-shadow: none;
+	color: #fff;
+	background: #000;
+	background: rgba(0,0,0, .8);
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px 20px;
+	margin: 0;
+	max-width: none;
+	font: 1em Helvetica, Arial, sans-serif;
+	text-align: center;
+  }
+
+/* Additional footer element for description of red boxed "to be discontinued" */
+#disconfooter {
+	background-color: #E97B65;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #FFF;
+	border-top: solid 8px #FFF;
+	font-size: 0.85em;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 693px;
+}
+
+/* ADDITIONAL CODE 20/05/14 FOR CATALOGUE PAGE, STYLES 2-4 */
+.probes12 td.headerrow.style2 div, .probes12 td.headerrow.style4 div {
+	width: 145px; /* UPDATE 08/09/16 - See BB Issue 474 for dealing with zoomed out browsers and pixel width fluctuations, was 149px */
+}
+.probes12 td.headerrow.style3 div {
+	width: 111px;
+}
+.righthand.style2 table td div.product-link, .righthand.style4 table td div.product-link {
+	width: 100%;
+}
+.righthand.style2 table td, .righthand.style4 table td {
+	width: 149px;
+}
+.righthand.style3 table td {
+	width: 111px;
+}
+#lefthand.style2 table tr td {
+	border-right: solid 8px #003A5C;
+}
+.fixedleft.style2, .fixedleft.style3, .fixedleft.style4 {
+    border-bottom: solid 0px white;
+}
+#lefthand table td.discontinued, .righthand table td.discontinued {
+	background-color: #E97B65 !important;
+	color: #FFF !important;
+}
+#lefthand table td.discontinued a, .righthand table td.discontinued a {
+	color: #FFF !important;
+}
+.righthand.style1 table td div {
+	width: 88px; /* AMENDED 18/12/14 TO WIDEN TABLE CELLS, TO MATCH HEADER ROW CELLS, WIDENED TO TO FIT PROBE NAME ON WINDOSE FIREFOX */
+}
+.targetspecies .species:hover {
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #9FACA3;
+	border-bottom-color: #333;
+	background-color: #003A5C;
+	color: #FFF;
+	cursor: pointer;
+}
+
+/* PRODUCT SPEC SHEETS PAGE */
+div.lot-table { /* taken from Bob's separate style sheet */
+  width: 290px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #CCC!important;
+  background-color: #ECECED;
+  margin-top: 5px;
+}
+div.lot-table td { /* taken from Bob's separate style sheet */
+  padding: 4px!important;
+}
+
+/* Little bit of CSS for Distributor Lists */
+#techpagecontents .dist li {
+	float: left;
+}
+#techpagecontents ul.dist {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+.countries {
+	width: 310px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	min-height: 310px;
+	border: solid 1px #CCC;
+	padding: 10px;
+}
+#techpagecontents .dist li h3 {
+	font-weight: 600;
+	margin-bottom: 0px;
+	font-size: 1.6em;
+	color: #406B85;
+}
+#techpagecontents .dist li p {
+	font-size: 1em;
+}
+#techpagecontents .dist li hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#techpagecontents .distcountrylist li {
+	float: left;
+	margin-right: 10px;
+	font-size: 1em;
+	color: #406B85;
+}
+#techpagecontents ul.distcountrylist {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+/* spotlight page background image */
+#techpagecontents.spotlightpage {
+	background-image: url(/img/spotlight-page-background.jpg);
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+/* Static Page "figure" styling for left & right */
+#techpagecontents div.figureleft {
+  width: 48%;
+  float: left;
+  margin-right: 0px;
+}
+#techpagecontents div.figureleftonly {
+  width: 48%;
+  float: left;
+  margin-right: 10px;
+}
+#techpagecontents div.figureright {
+  width: 48%;
+  float: right;
+  margin-left: 9px;
+}
+#techpagecontents div.figurerightcompany {
+  width: 38%;
+  float: right;
+  margin-left: 9px;
+}
+
+/* Catalog Resquest Form (Subscribe page) */
+.subscribe .questionnaire .control-group label {
+display: inline-block;
+width: 250px;
+text-align: left;
+margin-right: 10px;
+}
+.subscribe .questionnaire fieldset .control-group label {
+width: 120px;
+margin-left: 260px;
+}
+
+/* M J Webb custom scrollbar tweaks - Taken from the CSS for the Online Catalogue site(s) - added 12/09/14 */
+.row #leader .mCS-dark-thick.mCSB_horizontal>.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+height: 9px!important;
+margin: 4px auto!important;
+}
+.mCS-dark-thick.mCSB_horizontal>.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+height: 9px!important;
+margin: 4px auto!important;
+}
+.mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight {
+opacity: 0.8!important;
+filter: "alpha(opacity=50)"!important;
+-ms-filter: "alpha(opacity=50)"!important;
+}
+.row #leader .mCS-dark-thick>.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+background: #750324!important;
+opacity:1!important;
+}
+.mCS-dark-thick>.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+background: #750324!important;
+opacity:1!important;
+}
+.mCS-dark-thick>.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+background: #750324!important;
+}
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight{
+	background-image:url(./lib/mCSB_buttons.png)!important;
+	background-repeat:no-repeat;
+	opacity:0.4!important;
+	filter:"alpha(opacity=40)"!important; -ms-filter:"alpha(opacity=40)"!important; /* old ie */
+}
+
+/* extra bit of code for the lot numbers in the search page for Firefox */
+#lot-search-results .lot-table .lot-numbers {
+	color: #202E22;
+}
+
+/* extra styling for account activation email resend */
+#activeResend {
+	background-color: #ECECED;
+	padding: 10px;
+	margin-top: 10px;
+	border: solid 1px #b94a48;
+}
+#activeResend a {
+	color: #b94a48;
+}
+
+/* Additional CSS for styling the DIV that CiteAb's Widget gets put in... On the Product Page - 15/04/15 */
+#citeab-citation-widget {
+	float: right;
+	width: 100%; /* was 300, before Matt wanted it to stretch all the way across */
+	margin-right: 4px;
+}
+#images .span4.prodtabs.last {
+  margin-bottom: 15px;
+}
+@media (max-width: 979px) and (min-width: 768px) {
+#citeab-citation-widget {
+  width: 100%; /* was 315px before we wanted it full width (after filter doubled in height) */
+}
+}
+@media (max-width: 767px) {
+#citeab-citation-widget {
+  float: none;
+  width: 100%;
+  margin-right: 0px;
+}
+}
+
+/* Code for Matt's bootstrap collapsable elements inside editable pages */
+.jircollapse .btn {
+	margin-top: 12px;
+}
+.jircollapse .btn.firstcollapse {
+	margin-top: 0px;
+}
+.jircollapse .collapsecontent {
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(236, 236, 237);
+}
+/*Code for Matt's amended Technical Info editable page */
+.row.tech {
+	padding-left: 7px;
+}
+.row.tech .techicon {
+	float: right;
+}
+.row.tech .techicon .fa {
+	font-size: 6em; color: #003A5C;
+}
+.row.tech .techicon .fa:hover {
+	color: #008748;
+}
+.row.tech .techheader {
+	float: left; width:80%;
+}
+.row.tech .techbutton {
+	float: left;
+}
+@media (max-width: 500px) {
+.row.tech .techicon {
+	visibility: hidden;
+	display: none;
+}
+.row.tech .techheader {
+	width:100%;
+}
+.row.tech {
+	padding-left: 0px;
+}
+}
+
+/* CUSTOM FONTASTIC ICONS */
+.customicons {
+	font-size: 6em;
+	color: red;
+	text-decoration: none;
+}
+a.customicons:hover {
+	text-decoration: none;
+}
+
+/* css applied to the wideCat class, to hide header & footer for these pages */
+.wideCat .span12.footer, .narrowCat .span12.footer {
+	min-height: 10px;
+}
+.wideCat .span12.footer .links.group, .narrowCat .span12.footer .links.group {
+	display: none;
+	visibility: hidden;
+}
+.wideCat .span12.footer .buttons.group, .narrowCat .span12.footer .buttons.group {
+	display: none;
+	visibility: hidden;
+}
+.wideCat .span12.footer .group.eulogo, .narrowCat .span12.footer .group.eulogo {
+	display: none;
+	visibility: hidden;
+}
+.wideCat .span12.footer #bsilogo.group, .narrowCat .span12.footer #bsilogo.group {
+	display: none;
+	visibility: hidden;
+}
+
+/* Additional CSS to stop the page elements being "selectable" to solve a copy & paste BB issue 394 */
+.no-select {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
+
+/* CSS for the Probe Selector that drops down from the top of the Search Results page */
+/* NOTE: This is being amended 03/11/15 to instead pin the selector inside the main body area */
+#probeselector,
+#probeselector-vue
+{
+	/*position: relative; !* was fixed - 03/11/15 *!*/
+	/*top: -5px; !* was 0 - 03/11/15 *!*/
+	/*margin-left:  -0px; !* was -2px - 03/11/15 *!*/
+	background-color: #ECECED;
+	padding: 0px 0px 0px 0px; /* was 5px 0px 5px 0px; - 03/11/15 */
+	border-bottom: solid 6px #fff;
+	border-left: solid 1px #fff;
+	border-right: solid 1px #fff;
+}
+
+body #probeselector,
+body #probeselector-vue
+{
+    width: 740px;
+}
+
+body #probeselector .modal-body,
+bpdu #probeselector-vue .modal-body
+{
+    padding-top: 5px;
+}
+
+#probe-selector-unconjugated-legend,
+#probe-selector-unconjugated-legend-vue
+{
+    font-size: 0.75em;
+    line-height: 1.4em;
+    font-style: italic;
+}
+
+#probe-selector-toggle,
+#probe-selector-toggle-vue
+{
+    margin-left: 0px;
+}
+
+#probe-selector-groups,
+#probe-selector-groups-vue
+{
+    clear:both;
+}
+
+#probe-selector-group-1-probes,
+#probe-selector-group-1-probes-vue
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*#probeselector.span9 { !* Brand New - 03/11/15 *!*/
+    /*width: 701px;*/
+	/*float: none; !* Brand New - 04/11/15 *!*/
+/*}*/
+
+#probeselector .btn-selector,
+#probeselector-vue .btn-selector
+{
+	padding: 5px 3px;
+}
+/*#probeselector {*/
+	/*-webkit-box-shadow: 0px 3px 2px 0px rgba(153, 153, 153, 0.5); !* was 2px 1px 8px 3px rgba(0,0,0,0.2); - 03/11/15 *!*/
+	/*-moz-box-shadow: 0px 3px 2px 0px rgba(153, 153, 153, 0.5); !* was 2px 1px 8px 3px rgba(0,0,0,0.2); - 03/11/15 *!*/
+	/*box-shadow: 0px 3px 2px 0px rgba(153, 153, 153, 0.5); !* was 2px 1px 8px 3px rgba(0,0,0,0.2); - 03/11/15 *!*/
+	/*border-bottom: solid 6px #003A5C;*/
+	/*border-left: solid 1px #003A5C;*/
+	/*border-right: solid 1px #003A5C;*/
+	/*z-index: 999;*/
+/*}*/
+#probeselector .infoText,
+#probeselector-vue .infoText
+{
+	font-size: 10.5px;
+	color: #000;
+}
+#probeselector a, #probeselector a:hover,
+#probeselector-vue a, #probeselector-vue a:hover
+{
+	/*color: #fff;*/
+	font-weight: normal;
+}
+#probeselector .probebutton,
+#probeselector-vue .probebutton
+{
+	float:left;
+	width:153px; /* was 156 */
+	height:32px;
+	margin-right:8px; /* was 7 */
+	margin-bottom:8px; /* was 7 */
+	padding: 5px;
+	font-size: 0.8em; /* was 0.95 */
+	line-height: 1.6em; /* added brand new - 12/10/15 */
+	outline: solid 2px;
+	font-weight: bold; /* added new - 27/10/15 */
+    color: #fff;
+}
+#probeselector .probebutton {
+	/*outline: 0px;*/
+}
+#probeselector .probebutton:hover,
+#probeselector-vue .probebutton:hover
+{
+	cursor: pointer;
+}
+#probeselector .probebutton.off[style],
+#probeselector-vue .probebutton.off[style]
+{
+	background-color: #ECECED!important;
+	color: #333333; /* was #9A9A9A; */
+	outline: solid 2px;
+	/*height: 32px;*/
+	/*margin-top: 2px;*/
+	/*padding-top: 3px;*/
+}
+#probeselector .probebutton.disabled[style],
+#probeselector-vue .probebutton.disabled[style]
+{
+	background-color: #ECECED!important;
+	color: #9A9A9A;
+	outline: solid 2px;
+	outline-color: #9A9A9A!important;
+	cursor: default;
+}
+#probeselector .probebutton,
+#probeselector-vue .probebutton
+{
+	/*margin-right:5px;*/
+	height:34px;
+}
+#probeselector .probebutton .closeProbe,
+#probeselector-vue .probebutton .closeProbe
+{
+	float:right;
+}
+#probeselector .probebutton.off .closeProbe,
+#probeselector-vue .probebutton.off .closeProbe
+{
+	display: none;
+	visibility: hidden;
+}
+#probeselector .probebutton.disabled .closeProbe,
+#probeselector-vue .probebutton.disabled .closeProbe
+{
+	display: none;
+	visibility: hidden;
+}
+#probeselector .probebutton.probeoff,
+#probeselector-vue .probebutton.probeoff
+{
+	background-color: #ECECED;
+	color: #B7B6B9;
+}
+#probeselector .accordion,
+#probeselector-vue .accordion
+{
+	margin-bottom:5px;
+}
+#probeselector .accordion-group,
+#probeselector-vue .accordion-group
+{
+	border: 0px;
+}
+#probeselector .accordion-inner,
+#probeselector-vue .accordion-inner
+{
+	padding-left:5px;
+	padding-right:0px;
+}
+
+#probeselector .accordion-toggle,
+#probeselector-vue .accordion-toggle
+{
+	display:inline-block;
+	width: 479px; /* was 480 */
+	background-color:#fff;
+	color:#131513;
+	border: solid 2px;
+	font-size: 0.96em; /* Added Jan 2016 to counteract longestest titled range breaking alignment in Windows Safari */
+}
+#probeselector .accordion-toggle.discontinued,
+#probeselector-vue .accordion-toggle.discontinued
+{
+	color:#9A9A9A;
+	border: solid 2px #9A9A9A;
+}
+#probeselector .accordion-toggle .downarrow,
+#probeselector-vue .accordion-toggle .downarrow
+{
+	float:right;
+}
+#probeselector .selectall,
+#probeselector-vue .selectall
+{
+	border: solid 2px #7F9CAD;
+	background-color: #7F9CAD;
+	width: 132px;
+	margin-left: 1px;
+}
+#probeselector .selectall .icon,
+#probeselector-vue .selectall .icon
+{
+	float:right;
+}
+
+#probe-selector-total,
+#probe-selector-total-vue
+{
+    font-size: small;
+    font-weight: bold;
+    float: left;
+    margin-left: 10px;
+    margin-top: 4px;
+	padding-left: 10px;
+    border-left: solid 1px #9E9E9E;
+}
+.selectorRule {
+	margin: 8px 0;
+	border-bottom: solid 1px #9A9A9A;
+}
+.searchresults #probeselector .btn.apply {
+    padding-top: 4px;
+	padding-bottom: 4px;
+}
+#selectorspacer {
+	height: 0px; /* was 29px - 04/11/15 */
+}
+
+/* NEW additional Select2 CSS to remove 3Dness of dropdowns and make them fit more with the JIR squarer styling - 070915 */
+.select2-container .select2-choice {
+    border-radius: 0px!important;
+
+    background-color: #fff!important;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(0.5, #fff))!important;
+    background-image: -webkit-linear-gradient(center bottom, #fff 0%, #fff 50%)!important;
+    background-image: -moz-linear-gradient(center bottom, #fff 0%, #fff 50%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#ffffff', GradientType = 0)!important;
+    background-image: linear-gradient(top, #fff 0%, #fff 50%)!important;
+}
+
+.select2-drop {
+    border-radius: 0 0 0px 0px!important;
+}
+
+.select2-drop.select2-drop-above {
+    border-radius: 0px 0px 0 0!important;
+}
+
+.select2-container .select2-choice .select2-arrow {
+    border-radius: 0 0px 0px 0!important;
+
+    background: #eee!important;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(0.6, #eee))!important;
+    background-image: -webkit-linear-gradient(center bottom, #eee 0%, #eee 60%)!important;
+    background-image: -moz-linear-gradient(center bottom, #eee 0%, #eee 60%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#eeeeee', endColorstr = '#eeeeee', GradientType = 0)!important;
+    background-image: linear-gradient(top, #eee 0%, #eee 60%)!important;
+}
+
+/* Further Select2 styling, specifically for the Product Filter - 071015 */
+.productsearch .select2-container-multi .select2-choices {
+    font-size: 0.7em;
+}
+.productsearch .select2-container.span3 {
+    margin-bottom: 5px;
+    margin-top: 2px;
+}
+div.productsearch {
+	max-height: 3243px!important;
+	min-height: 243px;
+}
+
+/* Further Select2 styling, specifically for the Product Filter - Styling disabled dropdown options - 261015 */
+.select2-drop .select2-result-unselectable.select2-disabled .select2-match {
+	color: #ccc!important;
+	cursor: default!important;
+}
+.select2-drop .select2-results .select2-disabled {
+  color: #ccc!important;
+  background: #fff!important;
+  cursor: default!important;
+}
+.select2-drop .select2-results li {
+    border-bottom: solid 1px #eee;
+}
+
+/* Styling for the Product Filter (2nd Gen) anti-body / non-antibody toggle - 081015 */
+.productsearch #antibody-toggle {
+	margin-top: 22px; /* was 4px before filter doubled in height */
+	margin-bottom: 12px; /* was 2px before filter height was doubled */
+}
+.productsearch .btn-group > .btn {
+	font-size: 11px;
+	width: 108px;
+	font-weight:bold;
+}
+.productsearch form {
+    margin: 0 0 10px;
+}
+form.productsearch .btn-filterToggle1, form.productsearch .btn-filterToggle2 {
+    margin-top: 10px;
+}
+/* Below, temorarily, is standard logogreen button CSS code, retitled to filterToggle1 */
+.btn-filterToggle1 {
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #008748;
+  *background-color: #008748;
+  background-image: -moz-linear-gradient(top, #01A357, #008748);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#01A357), to(#008748));
+  background-image: -webkit-linear-gradient(top, #01A357, #008748);
+  background-image: -o-linear-gradient(top, #01A357, #008748);
+  background-image: linear-gradient(to bottom, #01A357, #008748);
+  background-repeat: repeat-x;
+  border-color: #016938 #016938 #016938;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01A357', endColorstr='#008748', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-filterToggle1:hover,
+.btn-filterToggle1:focus,
+.btn-filterToggle1:active,
+.btn-filterToggle1.active,
+.btn-filterToggle1.disabled,
+.btn-filterToggle1[disabled] {
+  color: #ffffff;
+  background-color: #008748;
+  *background-color: #008748;
+}
+/* Below, temorarily, is logogreen button CSS code, but it's been swapped around so that the "active" state looks like your standard "button" and the default (non-active) version is greyed out as per my original mockup (retitled to filterToggle2) */
+.btn-filterToggle2 {
+  color: #CACACA;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #AAAAAA;
+  *background-color: #AAAAAA;
+  background-image: none;
+  border: 1px solid #888888;
+  -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.25);
+  box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.25);
+}
+
+.btn-filterToggle2:hover,
+.btn-filterToggle2:focus,
+.btn-filterToggle2:active,
+.btn-filterToggle2.active,
+.btn-filterToggle2.disabled,
+.btn-filterToggle2[disabled] {
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #008748;
+  *background-color: #008748;
+  background-image: -moz-linear-gradient(top, #02D270, #008748);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#02D270), to(#008748));
+  background-image: -webkit-linear-gradient(top, #02D270, #008748);
+  background-image: -o-linear-gradient(top, #02D270, #008748);
+  background-image: linear-gradient(to bottom, #02D270, #008748);
+  background-repeat: repeat-x;
+  border-color: #016938 #016938 #016938;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#02D270', endColorstr='#008748', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+/* extra styling for the fabulight white paper email form */
+.fabemail {
+    background-color: #ececed;
+    padding:15px;
+    margin-top:20px;
+    margin-bottom:20px;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Extra CSS 11/11/15 to restyle the content of the central block of the site homepage - BitBucket isuue 411 */
+.innercontent.bigbanner {
+	position: relative;
+	padding:10px;
+	min-height: 395px;
+	background-image: url(/slider/slide-1-static-081215.jpg);
+	background-position: center top;
+}
+.innercontent.bigbanner #homeCentreTextOne {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 10px;
+	background-color: #fff;
+	margin: 10px;
+	margin-left: 15px;
+	color: #000;
+	text-align: left;
+	font-size: 14px;
+}
+
+.innercontent.bigbanner #homeCentreTextOne:before {
+	background: #fff;
+	left: 0px;
+	width: 15px;
+	height: 15px;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
+	position: absolute;
+	content: '';
+	pointer-events: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.innercontent.bigbanner #homeCentreTextTwo {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 10px;
+	background-color: #008748;
+	min-height: 61px;
+    border-top: solid 5px #fff;
+	text-align: center;
+}
+.innercontent.bigbanner #homeCentreTextTwo h4 {
+	font-size: 1.1em;
+	margin-top: 0px;
+	margin-left: 0%;
+	width: 100%;
+}
+.innercontent.bigbanner #homeCentreTextTwo h3 {
+    font-size: 1.5em;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+/* Okay, this is additional / duplicate CSS that specifically tackles the Product Filter height issues... to get it to marry back up on the home-page design. */
+div.productsearch {
+    min-height: 587px!important; /* This was 315px. This is for the desktop size. */
+}
+.prodpagetemplate div.productsearch {
+    min-height: 680px!important; /* This is specifically for the Product Page, where the tabs have had to move beside the Filter, rather than under. */
+}
+form.productsearch label.control-label {
+    margin-top: 18px!important; /* This was 4px before filter doubled in height */
+}
+form.productsearch .btn-filterToggle1, form.productsearch .btn-filterToggle2 {
+    margin-top: 7px!important; /* This overwrites code on line 3186 */
+}
+form.productsearch .select2-container-multi .select2-choices .select2-search-field input { /* This overwrites code on line 469 of select2.css... so technically won't matter when select2 gets swapped out. */
+    padding-top: 0px!important;
+	padding-bottom: 0px!important;
+}
+form.productsearch .btn-primary {
+    margin-top: 5px!important; /* This overwrites code on line 44 in Bob's rws.css file */
+}
+.productsearch form {
+    margin: 0 0 0px!important; /* This overwrites code on line 3183 */
+}
+form.productsearch {
+    min-height: 290px!important; /* This overwrites code on line 627 */
+}
+form.productsearch .select2-container-multi .select2-choices {
+    min-height: 25px; /* This overwrites code on line 448 of select2.css... so technically won't matter when select2 gets swapped out. */
+}
+
+/* With the Bootstrap Multiselect being added in, to replace the Select2 specifically in the Product Filter, we need some additional CSS. Note, some of this code will counteract identical code set previously (further up) in this very file */
+div.productsearch {
+    overflow: visible!important; /* important, so that it overwrites Bob's version in his separate CSS file */
+	position: relative; /* This is so that reset can be positioned bottom right 27/04/16 */
+}
+div.productsearch .multiselect-container.dropdown-menu > li > a {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 212px; /* was 160px */
+}
+div.productsearch .multiselect-container.dropdown-menu {
+    border-radius: 0px 0px 4px 4px;
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.productsearch .btn-group > .multiselect.dropdown-toggle.btn {
+    width: 215px!important;
+	padding: 2px 8px; /* this was 2px 12px prior to 23/03/16, where I'm tweaking to cope with long name of "Purified Proteins From Normal Serums" */
+}
+div.productsearch form {
+    width: 100%;
+}
+.productsearch .control-group {
+    margin-bottom: 12px; /* was 14px before the note under the search button was added into the mix */
+}
+.productsearch .multiselect.dropdown-toggle.btn.btn-default {
+	color: #333333;
+	text-align: left; /* manually added */
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0);
+	background-color: #ffffff;
+	background-image: -moz-linear-gradient(top, #ffffff, #ffffff);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ffffff));
+	background-image: -webkit-linear-gradient(top, #ffffff, #ffffff);
+	background-image: -o-linear-gradient(top, #ffffff, #ffffff);
+	background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffff', GradientType=0);
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border: 1px solid #cccccc;
+	border-bottom-color: #b3b3b3;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+.productsearch .btn-group > .multiselect.dropdown-toggle.btn {
+    font-weight: normal;
+	overflow: hidden; /* added 23/03/16 for hiding overhang of text if in tablet or mobile and the chosen name is a long one */
+}
+.multiselect-container.dropdown-menu label {
+    font-size: 11px;
+    line-height: 16px;
+}
+
+/* Bootstrap Multiselect in the Product Filter, colouring highlights, roll-overs and disabled */
+.productsearch .dropdown-menu > .active > a {
+    color: #576D59; /* very dark grey, near black */
+    text-decoration: none;
+    outline: 0;
+    background-color: #E3F0F7; /* very pale blue */
+    background-image: -moz-linear-gradient(top, #E3F0F7, #E3F0F7);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#E3F0F7), to(#E3F0F7));
+    background-image: -webkit-linear-gradient(top, #E3F0F7, #E3F0F7);
+    background-image: -o-linear-gradient(top, #E3F0F7, #E3F0F7);
+    background-image: linear-gradient(to bottom, #E3F0F7, #E3F0F7);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E3F0F7', endColorstr='#E3F0F7', GradientType=0);
+}
+.productsearch .dropdown-menu > .disabled > a {
+    color: #999999; /* a dark grey */
+	font-style: italic;
+    text-decoration: none;
+    outline: 0;
+    background-color: #f5f5f5; /* very pale grey */
+    background-image: -moz-linear-gradient(top, #f5f5f5, #f5f5f5);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f5f5f5));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #f5f5f5);
+    background-image: -o-linear-gradient(top, #f5f5f5, #f5f5f5);
+    background-image: linear-gradient(to bottom, #f5f5f5, #f5f5f5);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#f5f5f5', GradientType=0);
+	cursor: not-allowed; /* manually added */
+}
+
+.productsearch .searchNote {
+	font-size: 0.7em;
+}
+
+/* Additional CSS making the select2 dropdown on home page righthand side match more with the multiselect Product Filter */
+.select2-container .select2-choice > .select2-chosen {
+    font-size: 11px!important;
+    font-weight: normal!important;
+    color: #333333!important;
+}
+/* extra styling for "static" Reviews block */
+.innercontent.reviews {
+  border: 1px solid #acacac; /* grey */
+}
+.innercontent.reviews h5 {
+  color:#003A5C; /* green */
+}
+.innercontent.reviews p {
+    font-size: 0.8em;
+    line-height: normal;
+    color: #003A5C; /* green */
+}
+
+/* minor styling to new note on customer profile page, where email address can be amended - 16/02/16 */
+#change-pw-note{
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* CSS to colour link in error message in "Find By Code Number" into red */
+#quicksearch .error a {
+	color: darkred !important;
+}
+#quicksearch .error a:hover {
+	color: darkred !important;
+}
+
+/* additional CSS for new Probe Selector open/close button inside the Product Filter */
+form.productsearch .probe-btn {
+    margin-top: 5px!important;
+	float: right; /* added 18/04/16 to right align the "show conjugates" button */
+	clear:both; /* added 18/04/16 to right align the "show conjugates" button */
+}
+
+/* additional styling for the close-icon on the filter dropdowns */
+#closeicon {
+	position: absolute;
+	top: 2px;
+	right: 8px;
+	display: none;
+}
+.productsearch .multiselect.dropdown-toggle.btn {
+	position: relative;
+}
+.btn-group.open #closeicon {
+	display: block;
+}
+
+/* additional styling for the open-icon on the filter dropdowns */
+#openicon {
+	position: absolute;
+	top: 2px;
+	right: 8px;
+	display: block;
+}
+.btn-group.open #openicon {
+	display: none;
+}
+
+/* attempts to get the little dropdown arrow to change when dropdown's visible (within the Product Filter) */
+.caret-right {
+    display: none;
+    width: 0;
+    height: 0;
+    vertical-align: top;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-left: 4px solid #000000;
+    border-bottom: 4px solid transparent;
+    content: "";
+}
+.productsearch .fa.fa-minus {
+	display: none;
+}
+.productsearch .fa.fa-plus {
+	display: inline;
+}
+.productsearch .btn-group.open .fa.fa-minus {
+	display: inline;
+}
+.productsearch .btn-group.open .fa.fa-plus {
+	display: none;
+	visibility: hidden;
+}
+.btn .caret-right {
+    margin-top: 5px;
+    margin-left: 3px;
+}
+.btn-group.open .btn .caret-right {
+	display: inline-block;
+}
+.productsearch .btn-group.open .btn .caret {
+	display: none;
+	visibility: hidden;
+}
+
+/* tweaks to the Probe Selector for Matt March 2016 */
+.searchresults .btn.mjw-btn-centred {
+	padding-left: 10px;
+    padding-right: 10px;
+}
+
+#probeselector .toggle-chevron-left {
+	float:left;
+	margin-left:10px;
+}
+#probeselector .toggle-chevron-right {
+	float:right;
+	margin-right:10px;
+}
+
+#probeselector-vue .toggle-chevron-left {
+    float:left;
+    margin-left:10px;
+}
+#probeselector-vue .toggle-chevron-right {
+    float:right;
+    margin-right:10px;
+}
+
+/* Fresh CSS styling to the Product Filter "toggle" buttons, to remove the gradient and introduce background images */
+#ab-toggle-0.btn-filterToggle2 {
+    border: none;
+	color: transparent;
+	text-shadow: none;
+	background-image: url(../img/prod-filter-toggle-left-off-flat.png);
+	background-repeat: no-repeat;
+	border-color: transparent;
+	filter: none;
+	box-shadow: none;
+	height: 30px;
+	background-color: transparent;
+}
+#ab-toggle-0.btn-filterToggle2.active {
+	background-image: url(../img/prod-filter-toggle-left-on-flat.png);
+}
+#ab-toggle-0.btn-filterToggle2:hover {
+	background-position: 0;
+	background-image: url(../img/prod-filter-toggle-left-off-hover-flat.png);
+}
+#ab-toggle-0.btn-filterToggle2.active:hover {
+	background-image: url(../img/prod-filter-toggle-left-on-hover-flat.png);
+}
+#ab-toggle-0.btn-filterToggle2:focus {
+	background-position: 0;
+}
+#ab-toggle-1.btn-filterToggle2 {
+    border: none;
+	color: transparent;
+	text-shadow: none;
+	background-image: url(../img/prod-filter-toggle-right-off-flat.png);
+	background-repeat: no-repeat;
+	border-color: transparent;
+	filter: none;
+	box-shadow: none;
+	height: 30px;
+	background-color: transparent;
+}
+#ab-toggle-1.btn-filterToggle2.active {
+	background-image: url(../img/prod-filter-toggle-right-on-flat.png);
+}
+#ab-toggle-1.btn-filterToggle2:hover {
+	background-position: 0;
+	background-image: url(../img/prod-filter-toggle-right-off-hover-flat.png);
+}
+#ab-toggle-1.btn-filterToggle2.active:hover {
+	background-image: url(../img/prod-filter-toggle-right-on-hover-flat.png);
+}
+#ab-toggle-1.btn-filterToggle2:focus {
+	background-position: 0;
+}
+
+/* New bespoke tooltip colouring, to make it not partly transparent and have a white background with black text */
+.tooltip.in{opacity:1;filter:alpha(opacity=100)} /* was opacity:.8 and opacity=80 which I assume gives the slight transparency */
+.tooltip-inner{color:#000;background-color:#fff;}
+.tooltip.top .tooltip-arrow{border-bottom-color:#fff;}
+.tooltip.right .tooltip-arrow{border-right-color:#fff;}
+.tooltip.left .tooltip-arrow{border-bottom-color:#fff;}
+.tooltip.bottom .tooltip-arrow{border-bottom-color:#fff;}
+.tooltip-inner {
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.65);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.65);
+}
+
+#probe-selector-tooltip,
+#probe-selector-tooltip-vue
+{
+    float:left;
+    font-size: 1.4em;
+    border: solid 2px #003A5C;
+    border-radius:50%;
+    text-align: center;
+    width: 23px;
+    height: 23px;
+}
+
+#probe-selector-tooltip:hover,
+#probe-selector-tooltip-vue:hover
+{
+    border: solid 2px #008748;
+}
+
+#probe-selector-tooltip i,
+#probe-selector-tooltip-vue i
+{
+    margin-top: 3px;
+}
+
+/* on desktop size only */
+@media (min-width: 980px) {
+  #probeselector.modal { /* centering up the probe selector modal */
+	left: 50.5%;
+  }
+}
+
+/* on desktop and portrait iPad size only */
+@media (min-width: 768px) {
+  #product-search-reset {
+	position: absolute;
+    bottom: 14px;
+    right: 14px;
+  }
+  div#search-actions {
+    min-height: 35px;
+  }
+}
+
+/* new css july 2016, for the site homepage Useful Links box */
+.usefulLinks.techsearchbox {
+	background-image: none;
+	background-color: #FFFFFF;
+	border-bottom: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+}
+.usefulLinksList {
+	margin-top: 30px;
+	list-style: none;
+}
+ul.usefulLinksList {
+	color: #333;
+}
+.usefulLinksList li {
+    line-height: 25px;
+}
+.usefulLinksList a {
+	color: #FFFFFF;
+}
+
+/* styling specifically for Matt's July 2016 "High Def Imaging" spotlight feature */
+#spotlightAdminEditable h4 {
+    font-weight: 200;
+}
+#spotlightAdminEditable ul li {
+    font-size: 15px; /* was 12px before matt swapped blocks over */
+	font-weight: 300;
+}
+#spotlightAdminEditable h4 strong {
+    /* color: #f9a329; */
+}
+#spotlightAdminEditable ul li strong {
+    /* color: #f9a329; */
+	font-weight: 900;
+}
+#spotlightPone {
+	margin-top: 25px;
+}
+@media (max-width: 979px) and (min-width: 768px) {
+	h4 {
+	  font-size: 14px;
+	}
+	#spotlightPone {
+	  margin-top: 0px;
+	}
+	.spotlight .btn-orange {
+	  font-size: 12px;
+	}
+	#spotlightAdminEditable ul li {
+	  font-size: 13px; /* was 10px before matt swapped blocks over */
+	  line-height: 17px;
+	}
+}
+@media (max-width: 767px) {
+	#spotlightPone {
+	  margin-top: 0px;
+	}
+	#spotlightAdminEditable ul li {
+	  font-size: 11px; /* was 10px before matt swapped blocks over */
+	  line-height: 17px;
+	}
+}
+@media (max-width: 480px) {
+	.spotlight #spotlightAdminEditable p {
+		width: 100%;
+	}
+	.spotlight .btn-orange {
+		top: 10px;
+		bottom: inherit;
+	}
+}
+
+/* EXTRA CSS 12th Aug 2016 for Matt's swapping of the Spotlight and UsefulLinks blocks on the US Test site */
+.techsearchbox.special {
+    min-height: 259px;
+}
+.spotlight.special {
+    min-height: 315px;
+}
+.innercontent.special.spotlight #spotlightAdminEditable {
+	position: absolute;
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+	.techsearchbox.special {
+		min-height: 259px;
+	}
+	.techsearchbox.special a {
+		font-size: 13px;
+	}
+	.techsearchbox.special ul {
+		margin-left: 10px;
+	}
+	.spotlight.special {
+		min-height: 315px;
+	}
+}
+@media (max-width: 767px) {
+	.techsearchbox.special, .spotlight.special {
+		min-height: 180px;
+	}
+	.innercontent.special.spotlight {
+		padding: 0px!important;
+	}
+	.innercontent.special.spotlight #spotlightAdminEditable {
+		position: relative;
+	}
+}
+
+/* New CSS 07/09/16 for the expansion of the Exhibts Schedule page */
+.arrangeMeeting {
+	font-size:0.9em;
+	padding: 5px 10px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-right: 5px;
+	background-color: #003A5C;
+}
+.arrangeMeeting a {
+	color: #ffffff;
+}
+.boothFloorplan {
+	font-size:0.9em;
+	padding: 5px 10px;
+	display: inline-block;
+	margin-top: 5px;
+	background-color: #ececed;
+}
+.exhibitionTable .logoCell {
+	text-align: center;
+}
+.exhibitionTable td {
+	vertical-align: middle;
+	border-top: 2px solid #7f9cad;
+	padding: 10px;
+}
+#techpagecontents .jirtable.exhibitionTable {
+	border: 2px solid #7F9CAD;
+}
+
+/* NEW CSS 25/04/17 M J WEBB - for trying to get Carousel onto homepage, with a progress bar (including rearranging overall layout too) */
+.carousel {
+    margin-bottom: 0px;
+}
+.carousel-indicators li {
+  cursor: pointer;
+}
+.transition-timer-carousel-progress-bar {
+    height: 3px;
+    background-color: #5cb85c;/*progress bar color*/
+    width: 0;
+    margin: 0 0 0 0;
+    border: none;
+    z-index: 11;
+    position: relative;
+}
+.innercontent.bigbanner {
+  padding: 0px;
+  min-height: 415px;
+  background-image: none;
+  background-color: #fff;
+  text-align: left;
+}
+.innercontent.bigbanner.bigbanner h4 {
+    margin-top: 0px;
+    margin-left: 0%;
+    width: 100%;
+}
+.innercontent.bigbanner.bigbanner p {
+    margin-left: 0%;
+}
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+}
+.innercontent.bigbanner .carousel-caption a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/* NEW CSS 27/06/17 M J WEBB - for the separated out "wide footer" */
+.container.wideFooter {
+  width: 100%; background-color: #003A5C; /* EU DARK GREEN */
+}
+.span12.footer {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+.container.wideHeader {
+    background-color: #fff;
+    background-image: url(/img/header-background-blog-amend2.gif);
+    background-repeat: repeat-x;
+    width: 100%;
+    background-position: left 0px bottom 0px;
+}
+.login {
+    background-color: #fff;
+    min-height: 85px;
+    background-image: none;
+}
+body {
+    padding-top: 0px;
+    background-image: url(/img/igG-skelton-tile.gif);
+}
+.container.bodyContent {
+    background-color: #fff;
+    border-left: solid 7px #fff;
+    border-right: solid 7px #fff;
+}
+.wideCat .wideHeader .login {
+    min-height: 75px;
+}
+
+/* NEW CSS 29/06/17 M J WEBB - for the new topnavbar that Matt's after */
+.container.wideTopNavbar {
+    background-color: #ececed;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #555555;
+}
+.container.wideTopNavbar .navbar .nav > li > a {
+    color: #555555;
+}
+.container.wideTopNavbar .navbar .nav > .active > a {
+  background-color: #ececed;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.container.wideTopNavbar .navbar .nav li.dropdown.active > .dropdown-toggle {
+    background-color: #ececed;
+}
+.container.wideTopNavbar .navbar .nav > li > a:hover {
+    color: #000000;
+    background-color: #ccc;
+}
+.container.wideTopNavbar .navbar {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    border-bottom: solid 0px #008748;
+}
+.container.wideTopNavbar .navbar-inner {
+    padding-right: 0px;
+    padding-left: 0px;
+    border: 0px solid #ececed;
+}
+.container.wideTopNavbar .navbar-inner {
+  border-color: #ececed;
+  background: #ececed;
+}
+.container.wideTopNavbar .navbar .nav > li > a {
+    border-right: solid 0px #FFF;
+}
+.container.wideTopNavbar ul#navbar.nav {
+    width: 100%;
+}
+.container.wideTopNavbar #country-select {
+    max-height: 800px;
+    overflow: scroll;
+}
+#country-dropdown input[type="text"] {
+    font-size:1em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: -1px;
+}
+
+/* Tweaking of the existing main navbar, now that the menu's contents are changing - 30/06/17 M J WEBB */
+.mainNavbar .navbar-inner {
+    padding-left: 0px;
+}
+.mainNavbar ul#navbar.nav {
+    width: 100%;
+}
+.mainNavbar .navbar .nav > li > a {
+    border-right: solid 1px #383838;
+}
+.mainNavbar .navbar-inverse .navbar-inner {
+    border-color: #008748;
+    background: #406b85;
+    background: -moz-linear-gradient(top, #2c5a75 0%, #2c5a75 50%, #003a5c 51%, #003a5c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2c5a75), color-stop(50%,#2c5a75), color-stop(51%,#003a5c), color-stop(100%,#003a5c));
+    background: -webkit-linear-gradient(top, #2c5a75 0%,#2c5a75 50%,#003a5c 51%,#003a5c 100%);
+    background: -o-linear-gradient(top, #2c5a75 0%,#2c5a75 50%,#003a5c 51%,#003a5c 100%);
+    background: -ms-linear-gradient(top, #2c5a75 0%,#2c5a75 50%,#003a5c 51%,#003a5c 100%);
+    background: linear-gradient(to bottom, #2c5a75 0%,#2c5a75 50%,#003a5c 51%,#003a5c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c5a75', endColorstr='#003a5c',GradientType=0 );
+}
+.mainNavbar .navbar .nav > li > a:hover {
+    color: #fff;
+    background-color: #008748;
+    -webkit-box-shadow: inset 3px 3px 9px -1px rgba(2,61,32,0.7);
+    -moz-box-shadow: inset 3px 3px 9px -1px rgba(2,61,32,0.7);
+    box-shadow: inset 3px 3px 9px -1px rgba(2,61,32,0.7);
+}
+
+/* 15th Aug 2017 - extra CSS for our new Testimonials carousel box on homepage */
+.testimonialBox .testimonials {
+    min-height: 217px;
+}
+@media (max-width: 767px) {
+  .testimonialBox .testimonials {
+    min-height: 180px;
+  }
+}
+.testimonialBox .testimonials h2 {
+    background-color: #7F9CAD;
+    outline: solid 7px #7F9CAD;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 1px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.testimonialBox .testimonials h2 strong {
+    color: #003A5C;
+}
+.testimonialBox .testimonials .carousel-inner .item {
+    min-height: 205px;
+}
+.testimonialBox .testimonials .carousel-control {
+    top: 50%;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    font-size: 55px;
+    line-height: 15px;
+}
+.testimonialBox .testimonials .carousel-control.right {
+    left: auto;
+    right: 0px;
+}
+.testimonialBox .testimonials .carousel-indicators {
+    top: 0px;
+    right: 0px;
+}
+.testimonialBox .testimonials .carousel-caption {
+    left: 40px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 205px;
+    width: 600px;
+    padding: 0px;
+    background: transparent;
+    display: table;
+}
+.childCentre {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.testimonialBox .testimonials .carousel-inner {
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0);
+}
+/* 16th Aug 2017 - Cont. with Testimonials and Matt's own vision of home page layout - */
+.testimonialBox .carousel-caption h4, .testimonialBox .carousel-caption p {
+    color: #003A5C;
+    text-align: center;
+}
+.testimonialBox .carousel-caption p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.testimonialBox .carousel-indicators .active {
+    background-color: rgb(202, 235, 251);
+}
+.testimonialBox .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+}
+.testimonialBox .carousel-indicators li {
+    background-color: rgba(202, 235, 251, 0.4);
+}
+.techsearchbox.special {
+    min-height: 30px;
+}
+.innercontent.techsearchbox.special.White3D {
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0), inset -1px -1px 0px 1px rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    border-bottom: solid 0px #ccc;
+    border-left: solid 0px #ccc;
+    border-right: solid 0px #ccc;
+    border-top: solid 0px #ccc;
+    background: transparent;
+    padding: 0px;
+}
+.innercontent.techsearchbox h2 {
+    background-color: transparent;
+    outline: solid 0px #7F9CAD;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    color: transparent;
+    visibility: hidden;
+    display: none;
+}
+.innercontent.techsearchbox ul.usefulLinksList {
+    margin: 0 auto;
+    text-align: center;
+}
+.innercontent.techsearchbox .usefulLinksList li {
+    width: 124px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* FRESH CSS to try and get those responsive wide catalogue tables to actually line-up properly 070917 */
+@media (min-width: 1060px) {
+  .wideCat .span10.nomargin {
+      width: 83%;
+  }
+  .wideCat .noMinusEight {
+      margin-left: 0px;
+  }
+  .wideCat .style1 .span4.nomarginfirst {
+      width: 38%;
+      margin-left: 0px;
+  }
+  .wideCat .style1 #lefthand.span4.nomarginfirst {
+      width: 38.25%;
+  }
+  .wideCat .style1 .span6.nomargin.fixedright {
+      width: 60%;
+  }
+  .wideCat .style1 .span6.nomargin.righthand {
+      width: 60%;
+  }
+  .wideCat .style1 .span10.nomargin.cataloguebox {
+      width: 101%;
+      margin-left: 0px;
+  }
+
+  .wideCat .style1 .span10.nomargin.cataloguebox::-webkit-scrollbar {
+      width:15px;
+  }
+
+  .wideCat .style1 .span10.nomargin.cataloguebox::-webkit-scrollbar-track {
+      -webkit-border-radius:3px;
+      border-radius:3px;
+      background:rgba(0,0,0,0.1);
+  }
+
+  .wideCat .style1 .span10.nomargin.cataloguebox::-webkit-scrollbar-thumb {
+      -webkit-border-radius:3px;
+      border-radius:3px;
+      background:rgba(0,0,0,0.1);
+  }
+
+  .wideCat .style1 .span10.nomargin.cataloguebox::-webkit-scrollbar-thumb:hover {
+      background:rgba(0,0,0,0.2);
+  }
+
+  .wideCat .style1 .span10.nomargin.cataloguebox::-webkit-scrollbar-thumb:window-inactive {
+      background:rgba(0,0,0,0.05);
+  }
+}
+
+@media (min-width: 1200px) {
+  .wideCat .span10.nomargin {
+      width: 84%;
+  }
+  .wideCat .noMinusEight {
+      margin-left: 0px;
+  }
+  .wideCat .style1 .span4.nomarginfirst {
+      width: 33.75%;
+      margin-left: 0px;
+  }
+  .wideCat .style1 #lefthand.span4.nomarginfirst {
+      width: 33.5%;
+  }
+  .wideCat .style1 .span6.nomargin.fixedright {
+      width: 64.5%;
+  }
+  .wideCat .style1 .span6.nomargin.righthand {
+      width: 64.5%;
+  }
+  .wideCat .style1 .span10.nomargin.cataloguebox {
+      width: 101%;
+      margin-left: 0px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .wideCat .span10.nomargin {
+      width: 85.5%;
+  }
+  .wideCat .noMinusEight {
+      margin-left: 0px;
+  }
+  .wideCat .style1 .span4.nomarginfirst {
+      width: 29.9%;
+      margin-left: 0px;
+  }
+  .wideCat .style1 #lefthand.span4.nomarginfirst {
+      width: 29.9%;
+  }
+  .wideCat .style1 .span6.nomargin.fixedright {
+      width: 68.25%;
+  }
+  .wideCat .style1 .span6.nomargin.righthand {
+      width: 68.5%;
+  }
+  .wideCat .style1 .span10.nomargin.cataloguebox {
+      width: 101%;
+      margin-left: 0px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .wideCat .span10.nomargin {
+      width: 85.5%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .wideCat .span10.nomargin {
+      width: 86.5%;
+  }
+  .wideCat .noMinusEight {
+      margin-left: 0px;
+  }
+  .wideCat .style1 .span4.nomarginfirst {
+      width: 29%;
+      margin-left: 0px;
+  }
+  .wideCat .style1 #lefthand.span4.nomarginfirst {
+      width: 29%;
+  }
+  .wideCat .style1 .span6.nomargin.fixedright {
+      width: 69.5%;
+  }
+  .wideCat .style1 .span6.nomargin.righthand {
+      width: 69.5%;
+  }
+  .wideCat .style1 .span10.nomargin.cataloguebox {
+      width: 101%;
+      margin-left: 0px;
+  }
+}
+
+@media (min-width: 1550px) {
+  .wideCat .span10.nomargin {
+      width: 87.5%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .wideCat .span10.nomargin {
+      width: 88%;
+  }
+  .wideCat .noMinusEight {
+      margin-left: 0px;
+  }
+  .wideCat .style1 .span4.nomarginfirst {
+      width: 25%;
+      margin-left: 0px;
+  }
+  .wideCat .style1 #lefthand.span4.nomarginfirst {
+      width: 25%;
+  }
+  .wideCat .style1 .span6.nomargin.fixedright {
+      width: 73.5%;
+  }
+  .wideCat .style1 .span6.nomargin.righthand {
+      width: 73.5%;
+  }
+  .wideCat .style1 .span10.nomargin.cataloguebox {
+      width: 101%;
+      margin-left: 0px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .wideCat .span10.nomargin {
+      width: 88.5%;
+  }
+  .wideCat .noMinusEight {
+      margin-left: 0px;
+  }
+  .wideCat .style1 .span4.nomarginfirst {
+      width: 25.5%;
+      margin-left: 0px;
+  }
+  .wideCat .style1 #lefthand.span4.nomarginfirst {
+      width: 25.5%;
+  }
+  .wideCat .style1 .span6.nomargin.fixedright {
+      width: 73%;
+  }
+  .wideCat .style1 .span6.nomargin.righthand {
+      width: 73%;
+  }
+  .wideCat .style1 .span10.nomargin.cataloguebox {
+      width: 101%;
+      margin-left: 0px;
+  }
+}
+
+
+@media (min-width: 1800px) {
+  .wideCat .span10.nomargin {
+      width: 89%;
+  }
+  .wideCat .noMinusEight {
+      margin-left: 0px;
+  }
+  .wideCat .style1 .span4.nomarginfirst {
+      margin-left: 0px;
+      width: 20%;
+  }
+  .wideCat .style1 #lefthand.span4.nomarginfirst {
+      width: 20%;
+  }
+  .wideCat .style1 .span6.nomargin.fixedright {
+      width: 79%;
+  }
+  .wideCat .style1 .span6.nomargin.righthand {
+      width: 79%;
+  }
+  .wideCat .style1 .span10.nomargin.cataloguebox {
+      width: 101%;
+      margin-left: 0px;
+  }
+}
+
+
+
+
+/* OCTOBER/NOVEMBER 2017: Fresh code, targeting the custom scrollbar on some of the product tables */
+.mCSB_horizontal>.mCSB_container {
+    margin-bottom: 35px!important;
+}
+.fixedleft {
+    border-bottom: solid 35px white!important;
+}
+.mCSB_horizontal.mCustomScrollBox>.mCSB_scrollTools {
+    height: 29px!important;
+}
+.mCSB_horizontal>.mCSB_scrollTools .mCSB_buttonLeft, .mCSB_horizontal>.mCSB_scrollTools .mCSB_buttonRight {
+    height: 21px!important;
+}
+.row #leader .mCS-dark-thick.mCSB_horizontal>.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    height: 21px!important;
+    margin: 0px auto!important;
+}
+.row #leader .mCS-dark-thick>.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #cccccc!important;
+    opacity: 1!important;
+    border: solid 1px #999999;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.6);
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.6);
+}
+.mCSB_horizontal.mCustomScrollBox>.mCSB_scrollTools {
+    background-color: #fff;
+    opacity: 1;
+}
+.fixedright {
+    background-color: #FFF;
+}
+.mCSB_dragger_bar {
+    font-weight: normal;
+    color: black;
+}
+.mCSB_horizontal>.mCSB_scrollTools .mCSB_buttonLeft, .mCSB_horizontal>.mCSB_scrollTools .mCSB_buttonRight {
+    border: solid 1px #999999;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.6);
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.6);
+}
+.mCS-dark-thick>.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: -100px -37px!important;
+    opacity: 0.7!important;
+}
+.mCS-dark-thick>.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: -100px -53px!important;
+    opacity: 0.7!important;
+}
+.mCS-dark-thick.mCSB_horizontal>.mCSB_scrollTools .mCSB_draggerRail{
+    height: 21px!important;
+    margin: 1px 0!important;
+    border-top: solid 1px #c3c3c3;
+    border-bottom: solid 1px #c4c4c4;
+}
+.scrollTitle {
+    padding-top: 5px;
+    display: inline-block;
+}
+/* OCTOBER/NOVEMBER 2017: End of fresh code, targeting the custom scrollbar on some of the product tables */
+
+/* Dec 2018: Code for new accordion going onto the Product Page template */
+.prodPage .accordion-heading {
+  color: #FFF;
+  cursor: default;
+  background-color: #00A35A;
+  font-weight: normal;
+}
+.prodPage .accordion-heading a {
+  color: #FFF;
+}
+.prodPage .accordion-heading a:hover {
+  color: #FFF;
+}
+.prodPage .accordion-inner {
+  font-size: 0.85em;
+  line-height: 1.5em;
+}
+.prodPage #collapseThree .accordion-inner .prodtabs h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+    line-height: normal;
+    padding: 0px;
+    margin: 0px;
+}
+.prodPage #collapseThree .accordion-inner strong, .prodPage #collapseTwo .accordion-inner strong {
+    color: #4D7052;
+}
+.prodPage .accordion-group {
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2), inset -1px -1px 0px 1px #ffffff;
+    border-radius: 3px;
+    border-bottom: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    border-top: solid 0px #ccc;
+    background: linear-gradient(white 50%, #E4EBEF 75%, #F2F5F7 100%);
+}
+.accordion.prodPage  {
+    margin-bottom: 10px;
+}
+.prodPage .accordion-toggle .downarrow {
+    float: right;
+}
+
+/* Copied directly from the US Color Sheme separate CSS file, to get EU to match on this specific button-type  */
+/* Matt's FAQ "collapse" buttons with coloured borders */
+.btn-level1 {
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f5f5f5;
+  *background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border-color: #406B85;
+  border-width: 3px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-level1:hover,
+.btn-level1:focus,
+.btn-level1:active,
+.btn-level1.active,
+.btn-level1.disabled,
+.btn-level1[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+.btn-level2 {
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f5f5f5;
+  *background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border-color: #008748;
+  border-width: 3px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-level2:hover,
+.btn-level2:focus,
+.btn-level2:active,
+.btn-level2.active,
+.btn-level2.disabled,
+.btn-level2[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+.btn-level3 {
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f5f5f5;
+  *background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border-color: #750324;
+  border-width: 3px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-level3:hover,
+.btn-level3:focus,
+.btn-level3:active,
+.btn-level3.active,
+.btn-level3.disabled,
+.btn-level3[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+
+/* Styling added by Jorden for updated pages */
+#page-content {
+    font-family: "Open Sans", sans-serif;
+}
+
+#page-content p {
+    line-height: 1.6rem;
+    font-size: 1rem;
+    color: #000;
+}
+
+#page-content h2 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: #009fe3;
+    margin-top: 24px;
+}
+
+#page-content #tech-serv + h2,
+#page-content #tech-serv + section h2 {
+    margin-top: 0;
+}
+
+#page-content h3 {
+    font-size: 1.18rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+    color: #009453;
+    margin-top: 20px;
+}
+
+#page-content h4 {
+    font-weight: 600;
+    line-height: 1.65rem;
+}
+
+#page-content a {
+    text-decoration: none;
+    color: #406B85;
+    font-weight: 600;
+    line-height: 1.6rem;
+    font-size: 1rem;
+}
+
+#page-content a:hover {
+    color: #719fba;
+    text-decoration: underline;
+}
+
+#page-content .styled-list {
+    list-style-type: none;
+}
+
+#page-content .styled-list li {
+    margin-top: 1rem;
+    line-height: 1.6rem;
+    font-size: 1rem;
+}
+
+#page-content .styled-list li::before {
+    font-family: "Font Awesome 5 Pro";
+    display: inline-block;
+    content: "\f3c5";
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin-left: -20px;
+    margin-right: 8px;
+    font-size: .95rem;
+    color: #ed7004;
+    font-weight: 600;
+}
+
+#page-content .styled-list ol li::before {
+    display: none;
+}
+
+#page-content .styled-list li > ul li::before {
+    font-weight: 200;
+}
+
+#page-content ol li {
+    margin-top: 1rem;
+    line-height: 1.6rem;
+    font-size: 1rem;
+}
+
+.box-note {
+    border: 2px solid #009453;
+    padding: 12px;
+    margin: 1rem 0;
+}
+
+.box-note p {
+    margin: 0;
+    padding: 0;
+}
+
+#to-top {
+    background-color: #ed7004;
+    border: 3px solid #ed7004;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 20px;
+    right: 95px;
+    cursor: auto;
+    opacity: 0;
+    -webkit-transition: opacity .15s;
+    transition: opacity .15s;
+    -webkit-box-shadow: 1px 0 3px #fff,
+                        -1px 0 3px #fff,
+                        0 1px 3px #fff,
+                        0 -1px 3px #fff;
+    box-shadow: 1px 0 3px #fff,
+                -1px 0 3px #fff,
+                0 1px 3px #fff,
+                0 -1px 3px #fff;
+    z-index: 999;
+}
+
+#to-top i {
+    font-size: 1.3rem;
+    margin-right: 5px;
+}
+
+#to-top:hover {
+    background-color: #fff;
+    color: #ed7004;
+    text-decoration: none;
+}
+
+.min-x-lower {
+    display: block;
+    font-size: .75rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#tech-serv {
+    float: right;
+    margin-left: 1rem;
+}
+
+#tech-serv .fad,
+#tech-serv .fa-duotone,
+#tech-serv .fas,
+#tech-serv .fa-solid,
+#tech-serv .far,
+#tech-serv .fa-regular,
+#tech-serv .fal,
+#tech-serv .fa-light {
+    margin-right: 15px;
+}
+
+#tech-serv + h2 {
+    margin-bottom: 2rem;
+}
+
+#tech-serv + section h2 {
+    margin-bottom: 2rem;
+}
+
+#tech-serv-btn-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#tech-serv-btn-container a:hover {
+    text-decoration: none;
+}
+
+#tech-serv #tech-serv-btn {
+    color: #009fe3;
+    font-size: .85rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+#tech-serv #tech-serv-btn:hover {
+    color: #83cbf6;
+}
+
+#tech-serv-btn {
+    border: 2px solid #009fe3;
+    padding: 7px 13px;
+    background-color: #fff;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#tech-serv-btn:hover {
+    border-color: #83cbf6;
+}
+
+#tech-serv-btn i {
+    display: block;
+    margin: auto;
+    font-size: 1rem;
+    display: none;
+}
+
+#tech-serv-btn span {
+    display: block;
+}
+
+#tech-serv-btn span:last-child {
+    font-weight: 600;
+}
+
+@media (max-width: 980px) {
+    #page-content h4 {
+    font-size: 17.5px;
+    }
+}
+
+@media (max-width: 550px) {
+    #tech-serv {
+    float: none;
+    margin: 1rem auto 1.5rem;
+    }
+    #tech-serv + h2 {
+    margin-bottom: 1rem;
+    }
+    #tech-serv + section h2 {
+    margin-bottom: 1rem;
+    }
+}
+
+#page-content .js-hide {
+    display: none !important;
+}
+
+#page-content .btn-sq {
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+#page-content .btn-sq:hover {
+    text-decoration: none;
+    color: #ed7004;
+}
+
+.btn-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 1.3rem 0;
+}
+
+.btn-sq .fad,
+.btn-sq .fa-duotone,
+.btn-sq .fas,
+.btn-sq .fa-solid,
+.btn-sq .far,
+.btn-sq .fa-regular,
+.btn-sq .fal,
+.btn-sq .fa-light {
+    margin-right: 10px;
+}
+
+.btn-sq {
+    border: 2px solid #ed7004;
+    padding: 7px 13px;
+    background-color: #ed7004;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.5rem;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn-sq:hover {
+    background-color: #fff;
+}
+
+.vertical-btns {
+    display: block;
+}
+
+.vertical-btns .btn-sq {
+    margin: 1rem auto;
+}
+
+@media (max-width: 768px) {
+    #page-content .btn-sq {
+    font-size: 1.05rem;
+    }
+}
+
+/* IE 10 & 11 */
+@media all and (-ms-high-contrast: none) and (max-width: 768px), (-ms-high-contrast: active) and (max-width: 768px) {
+    .btn-container {
+    display: block;
+    }
+    .btn-container .btn-sq {
+    margin: 1rem auto;
+    }
+}
+
+#page-content #contents h3 {
+    margin-top: 15px;
+}
+
+#page-content #contents ul li::before {
+    color: #009453;
+}
+
+#page-content #contents li {
+    margin-top: .3rem;
+    line-height: 1.2rem;
+}
+
+#page-content #contents a {
+    font-size: .85rem;
+    line-height: 1.2rem;
+}
+
+#contents {
+    border: 1px solid #ccc;
+    max-width: 310px;
+    width: 100%;
+}
+
+#contents hr {
+    margin-top: 10px;
+}
+
+#contents-inner {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#contents h3 {
+    text-align: center;
+}
+
+#contents-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 1.6rem 0;
+}
+
+#along-img {
+    display: inline-block;
+    height: auto;
+    width: 47%;
+    border: 1px solid #ccc;
+    background: left/cover no-repeat;
+}
+
+@media (max-width: 980px) {
+    #along-img {
+    width: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    #along-img {
+    display: none;
+    }
+    #contents {
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+#page-content h2 + figure,
+#page-content h3 + figure,
+#page-content h4 + figure {
+  margin-top: 0;
+}
+
+#page-content figure {
+    margin: 32px auto;
+    border: 1px solid #ccc;
+}
+
+#page-content figure img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#page-content figure figcaption {
+    font-size: .875rem;
+    line-height: 1.35rem;
+    padding: 10px;
+    color: #222;
+}
+
+#page-content figure a {
+    font-size: .875rem;
+    line-height: inherit;
+}
+
+#page-content figure li,
+#page-content figure .styled-list li {
+    font-size: .875rem;
+    line-height: 1.35rem;
+    color: #222;
+    margin-top: .6rem;
+}
+
+#page-content .footnote ul {
+    margin-left: 0;
+    list-style-type: none;
+}
+
+#page-content .footnote ul li {
+    font-size: .8rem;
+    line-height: 1.2rem;
+    margin-top: 0;
+}
+
+#page-content .footnote ul li::before {
+    display: none;
+}
+
+#page-content .tbl-blue a {
+    font-size: .875rem;
+}
+
+#page-content .featured-info-text p {
+  color: #fff;
+  margin: auto;
+}
+
+#page-content .featured-info-text a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#page-content .featured-info-text a:hover {
+  color: #ddd;
+}
+
+.tbl-blue {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.tbl-blue caption {
+    caption-side: bottom;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.6rem;
+    margin-top: 1rem;
+}
+
+.tbl-blue a {
+    color: #003A5C;
+    font-weight: 400;
+}
+
+.tbl-blue a:hover {
+    color: #406B85;
+    text-decoration: underline;
+}
+
+.tbl-blue th {
+    background-color: #009fe3;
+    color: #fff;
+    padding: 8px 9px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.tbl-blue td {
+    padding: 10px 9px;
+    line-height: 1.6rem;
+    text-align: left;
+    vertical-align: top;
+    font-size: .875rem;
+}
+
+.tbl-blue tbody tr:nth-child(2n+1) {
+    background-color: #d4edfc;
+}
+
+.tbl-blue tbody tr:nth-child(2n) {
+    background-color: #b7e1fa;
+}
+
+.tbl-blue tfoot {
+    font-size: .8rem;
+}
+
+.featured-info-item {
+  width: 330px;
+  height: auto;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.featured-info-item img {
+  width: 100%;
+  display: block;
+}
+
+.featured-info-item:hover .featured-info-background {
+  right: -80px;
+  top: -80px;
+  width: 500px;
+  height: 520px;
+}
+
+.featured-info-item:hover .featured-info-background i {
+  opacity: 0;
+}
+
+.featured-info-item:hover .featured-info-text {
+  opacity: 1;
+  -webkit-transition: opacity .3s .15s;
+  transition: opacity .3s .15s;
+}
+
+.featured-info-background {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #ed7004;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 10px;
+  top: 10px;
+  -webkit-transition: right .4s,
+                      top .4s,
+                      width .4s,
+                      height .4s;
+  transition: right .4s,
+              top .4s,
+              width .4s,
+              height .4s;
+}
+
+.featured-info-background i {
+  margin: auto;
+  color: #fff;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.featured-info-text {
+  opacity: 0;
+  -webkit-transition: opacity .1s;
+  transition: opacity .1s;
+  position: absolute;
+  padding: 0 10px;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.featured-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.featured-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2rem;
+}
+
+.featured-quoted {
+  font-style: italic;
+}
+
+@media (max-width: 980px) {
+    #page-content .tbl-blue a {
+    font-size: .8rem;
+    }
+    .tbl-blue td {
+    font-size: .8rem;
+    line-height: 1.3rem;
+    }
+    .tbl-blue th {
+    font-size: .94rem;
+    line-height: 1.2rem;
+    }
+    .min-x-lower {
+    font-size: .65rem;
+    }
+    .featured-product {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    .featured-right {
+      margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #page-content .tbl-blue a {
+    font-size: .7rem;
+    }
+    .tbl-blue th {
+    font-size: .8rem;
+    line-height: 1.25rem;
+    }
+    .tbl-blue td {
+    font-size: .7rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .tbl-blue td {
+    line-height: 1.2rem;
+    }
+}
+
+@media (max-width: 370px) {
+  .featured-info-item {
+    width: 100%;
+  }
+}
+
+/* IE 10 & 11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .featured-product {
+    display: block;
+  }
+  .featured-info-background i {
+    margin-top: 13px;
+  }
+}
+
+#bulk-order {
+  padding: 16px;
+  border: 2px solid #003A5C;
+}
+
+#bulk-order label {
+  width: 135px;
+}
+
+#bulk-order #bulk-order-btn {
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 600;
+  border: 2px solid #003A5C;
+  padding: 7px 13px;
+  background-color: #003A5C;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.5rem;
+  background-image: none;
+  display: block;
+  margin: 0 auto;
+  max-width: 128px;
+}
+
+#bulk-order #bulk-order-btn:hover {
+  background-color: #fff;
+  text-decoration: none;
+  color: #003A5C;
+}
+
+#bulk-order #bulk-order-btn::before {
+  font-family: "Font Awesome 5 Pro";
+  display: inline-block;
+  content: "\f07a";
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  #bulk-order #bulk-order-btn {
+    max-width: 158px;
+    font-size: 1.05rem;
+  }
+}
+
+#page-content .sliding-info-container h4 {
+  font-size: 24px;
+  line-height: 2.2rem;
+}
+
+#page-content .sliding-info-container a {
+  text-decoration: none;
+  color: #003A5C;
+}
+
+#page-content .sliding-info-container a i {
+  font-size: 3rem;
+  color: #003A5C;
+}
+
+#page-content .sliding-info-container a span {
+  color: #009453;
+}
+
+.sliding-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sliding-info-item {
+  text-align: center;
+  border: 3px solid #003A5C;
+  width: 48%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.sliding-info-item .fa-angle-up {
+  display: none;
+}
+
+.sliding-info-item h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.sliding-info-item p {
+  position: absolute;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sliding-info-item span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.sliding-info-item h4,
+.sliding-info-item p,
+.sliding-info-item span {
+  padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .sliding-info-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sliding-info-item {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 350px;
+  }
+  .sliding-info-item:first-of-type {
+    margin-bottom: 2rem;
+  }
+  .sliding-info-item p {
+    top: 50%;
+  }
+}
+
+@media (min-width: 980px) {
+  .sliding-info-item .fa-angle-up {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 3rem;
+    color: #003A5C;
+    -webkit-transition: bottom .3s ease-out, opacity .3s ease-out;
+    transition: bottom .3s ease-out, opacity .3s ease-out;
+  }
+  .sliding-info-item h4 {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transition: top .3s ease-out, -webkit-transform .3s ease-out;
+    transition: top .3s ease-out, -webkit-transform .3s ease-out;
+    transition: top .3s ease-out, transform .3s ease-out;
+    transition: top .3s ease-out, transform .3s ease-out, -webkit-transform .3s ease-out;
+  }
+  .sliding-info-item p {
+    top: 60%;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .sliding-info-item span {
+    bottom: -20%;
+  }
+  .sliding-info-item p,
+  .sliding-info-item span {
+    position: absolute;
+    opacity: 0;
+  }
+  .sliding-info-item:hover .fa-angle-up {
+    bottom: 60%;
+    opacity: 0;
+  }
+  .sliding-info-item:hover h4 {
+    top: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .sliding-info-item:hover p {
+    left: 0;
+    margin-top: 0;
+    top: 56%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transition: top .3s, opacity .3s, -webkit-transform .3s;
+    transition: top .3s, opacity .3s, -webkit-transform .3s;
+    transition: top .3s, opacity .3s, transform .3s;
+    transition: top .3s, opacity .3s, transform .3s, -webkit-transform .3s;
+  }
+  .sliding-info-item:hover span {
+    bottom: 10px;
+    -webkit-transition: bottom .3s, opacity .3s;
+    transition: bottom .3s, opacity .3s;
+  }
+  .sliding-info-item:hover p,
+  .sliding-info-item:hover span {
+    opacity: 1;
+    -webkit-transition-delay: .05s;
+            transition-delay: .05s;
+  }
+}
+
+/* Custom dropdown styling */
+
+.jir-drop {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.dd-btn {
+  border: none;
+  background: #009fe3;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.dd-btn::after {
+  display: inline-block;
+  margin-left: .455rem;
+  vertical-align: .155rem;
+  content: "";
+  border-top: .4rem solid;
+  border-right: .4rem solid transparent;
+  border-bottom: 0;
+  border-left: .4rem solid transparent;
+}
+
+.dd-btn:hover {
+  background: #08b5ff;
+}
+
+.dd-btn:active {
+  background: #0098d9;
+}
+
+.dd-btn:focus {
+  outline-color: #006997;
+}
+
+.jir-drop-list {
+  position: absolute;
+  height: auto;
+  overflow-y: scroll;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+  background: #d4edfc;
+  border: 1px solid #ccc;
+  z-index: 11;
+  scrollbar-color: #009fe3 rgba(0, 0, 0, 0);
+}
+
+.jir-drop-list hr {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.jir-drop-list::-webkit-scrollbar {
+  width: 14px;
+}
+
+.jir-drop-list::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+.jir-drop-list::-webkit-scrollbar-thumb {
+  background-color: #009fe3;
+  border-radius: 7px;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.drop-select {
+  text-align: left;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  padding: .75rem .9rem;
+  cursor: pointer;
+  color: #333333;
+  min-height: 2.75rem;
+}
+
+.drop-select:hover {
+  background: #b7e1fa;
+}
+
+.dd-active > .dd-btn::after {
+  border-top: 0;
+  border-bottom: .4rem solid;
+}
+
+.dd-active .jir-drop-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.drop-item-hidden {
+  display: none;
+}
+
+.dd-close {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  z-index: 9;
+  top: 0;
+  left: 0;
+}
+
+.dd-close-active {
+  display: block;
+}
+
+/* custom dropdown styling end */
+
+#citeab-image-widget-frame {
+  width: 100%;
+  height: 300px;
+  float: right;
+  margin-right: 4px;
+}
+
+/* hr elements within manual image uploaded section */
+.prod-img-sep {
+  float: left;
+  width: 100%;
+}
+
+/* Should only apply when custom product image not applied, so only one is between the two citeab widgets */
+.prod-img-sep + .prod-img-sep {
+  display: none;
+}
+
+/* Prevent text on images from being blurry on Chrome */
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Revert to auto on Safari 11+ to prevent pixelated images */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    img {
+      image-rendering: auto;
+    }
+}}
+
+/* Set bsi iso text to white */
+#bsilogo {
+  color: #fff;
+}
+
+/* fluorofinder start */
+
+#viewer #ffsv {
+  width: 100%;
+  border: none;
+}
+
+#viewer,
+#viewer #ffsv {
+  -webkit-transition: height .5s linear;
+  transition: height .5s linear;
+}
+
+.spectra-viewer {
+  height: 900px;
+}
+
+.spectra-hidden {
+  height: 0;
+}
+
+.spectra-open-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.spectra-open-container > span {
+  margin: auto;
+}
+
+.spectra-open-container > span:hover {
+  color: #555555;
+  cursor: pointer;
+}
+
+.spectra-open-container hr {
+  -ms-flex-preferred-size: 26%;
+      flex-basis: 26%;
+  height: 0px;
+  margin-left: 0;
+  margin-right: 0;
+  border-top-color: #000;
+}
+
+#spectra-btn-container + #viewer iframe {
+  margin-top: 1rem;
+}
+
+@media (max-width: 980px) {
+  .spectra-open-container hr {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+}
+
+@media (max-width: 580px) {
+  .spectra-open-container hr {
+    -ms-flex-preferred-size: 14%;
+        flex-basis: 14%;
+  }
+}
+
+@media (max-width: 465px) {
+  .spectra-open-container hr {
+    -ms-flex-preferred-size: 11%;
+        flex-basis: 11%;
+  }
+}
+
+@media (max-width: 430px) {
+  .spectra-open-container hr {
+    -ms-flex-preferred-size: 6%;
+        flex-basis: 6%;
+  }
+}
+
+@media (max-width: 400px) {
+  .spectra-open-container hr {
+    -ms-flex-preferred-size: 4%;
+        flex-basis: 4%;
+  }
+}
+
+@media (max-width: 360px) {
+  .spectra-open-container hr {
+    display: none;
+  }
+}
+
+@media (max-width: 340px) {
+  #spectra-btn {
+    font-size: 13px;
+  }
+}
+
+/* fluorofinder end */
+
+/* Landing page styling start */
+
+#page-content .landing-container a:hover {
+  text-decoration: none;
+}
+#page-content .landing-item h4 {
+  color: #fff;
+  font-size: 25px;
+  line-height: 2.1rem;
+}
+#page-content .landing-item ul {
+  margin-left: 21px;
+}
+#page-content .landing-item ul li::before {
+  color: rgb(0, 159, 227);
+}
+#page-content .landing-item li {
+  line-height: 1.4rem;
+  font-size: 0.87rem;
+}
+#page-content .landing-item:hover h4 {
+  margin-top: 8px;
+}
+
+.landing-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 30px;
+}
+.landing-container li {
+  margin-top: 1rem;
+}
+.landing-container li::before {
+  color: #003A5C;
+}
+
+.landing-item {
+  height: 296px;
+  background: rgb(0, 148, 83);
+  grid-column: span 2;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 6px -6px rgb(85, 85, 85);
+}
+.landing-item .landing-img-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.landing-item .landing-img-background::before {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+.landing-item h4 {
+  margin-top: 50%;
+  transform: translateY(-50%);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.landing-item ul {
+  text-align: left;
+  margin-bottom: 1.3rem;
+  color: #fff;
+  font-weight: 400;
+}
+.landing-item ul,
+.landing-item span {
+  opacity: 0;
+  position: absolute;
+  left: -10000px;
+}
+.landing-item li::before {
+  text-shadow: none;
+}
+.landing-item span {
+  color: rgb(0, 159, 227);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.landing-item .fa-angle-up {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  font-size: 3rem;
+  transition: bottom 0.3s, opacity 0.3s;
+  color: #fff;
+}
+.landing-item h4,
+.landing-item .fa-angle-up,
+.landing-item ul,
+.landing-item span {
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.45), -1px 1px 8px rgba(0, 0, 0, 0.45), -1px -1px 8px rgba(0, 0, 0, 0.45), 1px -1px 8px rgba(0, 0, 0, 0.45);
+}
+.landing-item h4 {
+  transition: margin-top 0.3s ease-out, transform 0.3s ease-out;
+}
+.landing-item .landing-img-background {
+  transition: filter 0.4s;
+}
+.landing-item:hover h4 {
+  transform: translateY(0%);
+}
+.landing-item:hover p {
+  position: static;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+  transition-delay: 0.1s;
+}
+.landing-item:hover ul,
+.landing-item:hover span {
+  position: static;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+  transition-delay: 0.1s;
+  margin-bottom: 1rem;
+}
+.landing-item:hover .fa-angle-up {
+  bottom: 200px;
+  opacity: 0;
+}
+.landing-item:hover .landing-img-background::before {
+  background: rgba(0, 0, 0, 0.6);
+  transition: background 0.3s;
+}
+
+.landing-content {
+  z-index: 10;
+  position: relative;
+  width: 86%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.landing-odd .landing-item:last-of-type {
+  grid-column-end: 4;
+}
+
+@media (max-width: 980px) {
+  #page-content .landing-item h4 {
+    margin-top: 8px;
+    font-size: 19px;
+    line-height: 1.7rem;
+  }
+
+  .landing-item {
+    height: auto;
+  }
+  .landing-item h4 {
+    transform: translateY(0);
+  }
+  .landing-item p {
+    position: static;
+    opacity: 1;
+  }
+  .landing-item h5,
+.landing-item ul,
+.landing-item span {
+    position: static;
+    opacity: 1;
+  }
+  .landing-item span {
+    margin-bottom: 1rem;
+  }
+  .landing-item .fa-angle-up {
+    display: none;
+    opacity: 0;
+  }
+  .landing-item .landing-img-background::before {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .landing-item:hover ul {
+    margin-bottom: 1.3rem;
+  }
+  .landing-item:hover span {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .landing-item span {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  .landing-container {
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .landing-odd .landing-item:last-of-type {
+    grid-column: span 2;
+  }
+
+  .landing-item {
+    grid-column: span 2;
+  }
+}
+
+/* Landing page styling end */
+
+/* end of styling added by Jorden */
+
+/* Extra MJWEBB CSS for positioning of the ReCaptcha Robot box applied to forms */
+@media (min-width: 980px) {
+  #customer-registration #recaptcha-container {
+    float: right;
+    margin-right: 65px;
+  }
+}

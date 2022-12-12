@@ -1,0 +1,115 @@
+.jir-drop {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.dd-btn {
+    border: none;
+    background: $blue;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+
+    &::after {
+        display: inline-block;
+        margin-left: .455rem;
+        vertical-align: .155rem;
+        content: "";
+        border-top: .4rem solid;
+        border-right: .4rem solid transparent;
+        border-bottom: 0;
+        border-left: .4rem solid transparent;
+    }
+
+    &:hover {
+        background: lighten($blue, 7%);
+    }
+
+    &:active {
+        background: darken($blue, 2%);
+    }
+
+    &:focus {
+        outline-color: darken($blue,15%);
+    }
+}
+
+.jir-drop-list {
+    position: absolute;
+    height: auto;
+    overflow-y: scroll;
+    // display: flex;
+    flex-direction: column;
+    display: none;
+    background: $lightBlue;
+    border: 1px solid #ccc;
+    z-index: 11;
+    // scrollbar-width: thin;
+    scrollbar-color: $blue rgba(0,0,0,0);
+
+    hr {
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+
+    &::-webkit-scrollbar {
+        width: 14px;
+    }
+    &::-webkit-scrollbar-track {
+        background: rgba(0,0,0,0);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $blue;
+        border-radius: 7px;
+        border: 3px solid rgba(0,0,0,0);
+    }
+}
+
+.drop-select {
+    text-align: left;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    padding: .75rem .9rem;
+    cursor: pointer;
+    color: $darkGrey;
+    min-height: 2.75rem;
+
+    &:hover {
+        background: darken($lightBlue, 6%);
+    }
+}
+
+.dd-active {
+    > .dd-btn::after {
+        border-top: 0;
+        border-bottom: .4rem solid;
+    }
+
+    .jir-drop-list {
+        display: flex;
+    }
+}
+
+.drop-item-hidden {
+    display: none;
+}
+
+.dd-close {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 9;
+    top: 0;
+    left: 0;
+
+    &-active {
+        display: block;
+    }
+}

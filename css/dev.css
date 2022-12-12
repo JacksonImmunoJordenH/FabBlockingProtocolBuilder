@@ -1,0 +1,541 @@
+#techpagecontents {
+  width: 686px;
+}
+
+#techpagecontents hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #ffffff;
+}
+
+@media (max-width: 980px) {
+  #techpagecontents {
+    width: 524px;
+  }
+}
+
+@media (max-width: 768px) {
+  #techpagecontents {
+    width: 100%;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#page-content {
+  font-family: "Open Sans", sans-serif;
+}
+
+#page-content p {
+  line-height: 1.6rem;
+  font-size: 1rem;
+  color: #000;
+}
+
+#page-content h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: #009fe3;
+  margin-top: 24px;
+}
+
+#page-content #tech-serv + h2,
+#page-content #tech-serv + section h2 {
+  margin-top: 0;
+}
+
+#page-content h3 {
+  font-size: 1.18rem;
+  line-height: 1.8rem;
+  font-weight: 600;
+  color: #009453;
+  margin-top: 20px;
+}
+
+#page-content h4 {
+  font-weight: 600;
+  line-height: 1.65rem;
+}
+
+#page-content a {
+  text-decoration: none;
+  color: #406B85;
+  font-weight: 600;
+  line-height: 1.6rem;
+  font-size: 1rem;
+}
+
+#page-content a:hover {
+  color: #719fba;
+  text-decoration: underline;
+}
+
+#page-content ul {
+  list-style-type: none;
+}
+
+#page-content ul li {
+  margin-top: 1rem;
+  line-height: 1.6rem;
+  font-size: 1rem;
+}
+
+#page-content ul li::before {
+  font-family: "Font Awesome 5 Pro";
+  display: inline-block;
+  content: "\f3c5";
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  margin-left: -20px;
+  margin-right: 8px;
+  font-size: .95rem;
+  color: #ed7004;
+  font-weight: 600;
+}
+
+#page-content ul li > ul li::before {
+  font-weight: 200;
+}
+
+#page-content ol li {
+  margin-top: 1rem;
+  line-height: 1.6rem;
+  font-size: 1rem;
+}
+
+.box-note {
+  border: 2px solid #009453;
+  padding: 12px;
+  margin: 1rem 0;
+}
+
+.box-note p {
+  margin: 0;
+  padding: 0;
+}
+
+#to-top {
+  background-color: #ed7004;
+  border: 3px solid #ed7004;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  cursor: auto;
+  opacity: 0;
+  -webkit-transition: opacity .15s;
+  transition: opacity .15s;
+  -webkit-box-shadow: 1px 0 3px #fff,
+                      -1px 0 3px #fff,
+                      0 1px 3px #fff,
+                      0 -1px 3px #fff;
+  box-shadow: 1px 0 3px #fff,
+              -1px 0 3px #fff,
+              0 1px 3px #fff,
+              0 -1px 3px #fff;
+  z-index: 999;
+}
+
+#to-top i {
+  font-size: 1.3rem;
+  margin-right: 5px;
+}
+
+#to-top:hover {
+  background-color: #fff;
+  color: #ed7004;
+  text-decoration: none;
+}
+
+.min-x-lower {
+  display: block;
+  font-size: .75rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#tech-serv {
+  float: right;
+  margin-left: 1rem;
+}
+
+#tech-serv .fad,
+#tech-serv .fas,
+#tech-serv .far,
+#tech-serv .fal {
+  margin-right: 15px;
+}
+
+#tech-serv + h2 {
+  margin-bottom: 2rem;
+}
+
+#tech-serv + section h2 {
+  margin-bottom: 2rem;
+}
+
+#tech-serv-btn-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#tech-serv-btn-container a:hover {
+  text-decoration: none;
+}
+
+#tech-serv #tech-serv-btn {
+  color: #009fe3;
+  font-size: .85rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+#tech-serv #tech-serv-btn:hover {
+  color: #83cbf6;
+}
+
+#tech-serv-btn {
+  border: 2px solid #009fe3;
+  padding: 7px 13px;
+  background-color: #fff;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#tech-serv-btn:hover {
+  border-color: #83cbf6;
+}
+
+#tech-serv-btn i {
+  display: block;
+  margin: auto;
+  font-size: 1rem;
+  display: none;
+}
+
+#tech-serv-btn span {
+  display: block;
+}
+
+#tech-serv-btn span:last-child {
+  font-weight: 600;
+}
+
+@media (max-width: 980px) {
+  #page-content h4 {
+  font-size: 17.5px;
+  }
+}
+
+@media (max-width: 550px) {
+  #tech-serv {
+  float: none;
+  margin: 1rem auto 1.5rem;
+  }
+  #tech-serv + h2 {
+  margin-bottom: 0rem;
+  }
+  #tech-serv + section h2 {
+  margin-bottom: 0rem;
+  }
+}
+
+.js-hide {
+  display: none;
+}
+
+#page-content .btn-sq {
+  color: #fff;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+#page-content .btn-sq:hover {
+  text-decoration: none;
+  color: #ed7004;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 1.3rem 0;
+}
+
+.btn-sq .fad,
+.btn-sq .fas,
+.btn-sq .far,
+.btn-sq .fal {
+  margin-right: 10px;
+}
+
+.btn-sq {
+  border: 2px solid #ed7004;
+  padding: 7px 13px;
+  background-color: #ed7004;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.5rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.btn-sq:hover {
+  background-color: #fff;
+}
+
+.vertical-btns {
+  display: block;
+}
+
+.vertical-btns .btn-sq {
+  margin: 1rem auto;
+}
+
+@media (max-width: 768px) {
+  #page-content .btn-sq {
+  font-size: 1.05rem;
+  }
+}
+
+/* IE 10 & 11 */
+@media all and (-ms-high-contrast: none) and (max-width: 768px), (-ms-high-contrast: active) and (max-width: 768px) {
+  .btn-container {
+  display: block;
+  }
+  .btn-container .btn-sq {
+  margin: 1rem auto;
+  }
+}
+
+#page-content #contents h3 {
+  margin-top: 15px;
+}
+
+#page-content #contents ul li::before {
+  color: #009453;
+}
+
+#page-content #contents li {
+  margin-top: .3rem;
+  line-height: 1.2rem;
+}
+
+#page-content #contents a {
+  font-size: .85rem;
+  line-height: 1.2rem;
+}
+
+#contents {
+  border: 1px solid #ccc;
+  max-width: 310px;
+  width: 100%;
+}
+
+#contents hr {
+  margin-top: 10px;
+}
+
+#contents-inner {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#contents h3 {
+  text-align: center;
+}
+
+#contents-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 1.6rem 0;
+}
+
+#along-img {
+  display: inline-block;
+  height: auto;
+  width: 47%;
+  border: 1px solid #ccc;
+  background: left/cover no-repeat;
+}
+
+@media (max-width: 980px) {
+  #along-img {
+  width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  #along-img {
+  display: none;
+  }
+  #contents {
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+#page-content figure {
+  margin: 0 auto 32px;
+  border: 1px solid #ccc;
+}
+
+#page-content figure img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#page-content figure figcaption {
+  font-size: .875rem;
+  line-height: 1.35rem;
+  padding: 10px;
+  color: #222;
+}
+
+#page-content figure a {
+  font-size: .875rem;
+}
+
+#page-content figure li {
+  font-size: .875rem;
+  line-height: 1.35rem;
+  color: #222;
+  margin-top: .6rem;
+}
+
+#page-content .footnote ul {
+  margin-left: 0;
+}
+
+#page-content .footnote ul li {
+  font-size: .8rem;
+  line-height: 1.2rem;
+  margin-top: 0;
+}
+
+#page-content .footnote ul li::before {
+  display: none;
+}
+
+#page-content .tbl-blue a {
+  font-size: .875rem;
+}
+
+.tbl-blue {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.tbl-blue caption {
+  caption-side: bottom;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.6rem;
+  margin-top: 1rem;
+}
+
+.tbl-blue a {
+  color: #003A5C;
+  font-weight: 400;
+}
+
+.tbl-blue a:hover {
+  color: #406B85;
+  text-decoration: underline;
+}
+
+.tbl-blue th {
+  background-color: #009fe3;
+  color: #fff;
+  padding: 8px 3px 8px 9px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.tbl-blue td {
+  padding: 10px 9px;
+  line-height: 1.6rem;
+  text-align: left;
+  vertical-align: top;
+  font-size: .875rem;
+}
+
+.tbl-blue td:nth-child(n+3) {
+  padding-left: 12px;
+}
+
+.tbl-blue tbody tr:nth-child(2n+1) {
+  background-color: #d4edfc;
+}
+
+.tbl-blue tbody tr:nth-child(2n) {
+  background-color: #b7e1fa;
+}
+
+.tbl-blue tfoot {
+  font-size: .8rem;
+}
+
+@media (max-width: 980px) {
+  #page-content .tbl-blue a {
+  font-size: .8rem;
+  }
+  .tbl-blue td {
+  font-size: .8rem;
+  line-height: 1.3rem;
+  }
+  .tbl-blue th {
+  font-size: .94rem;
+  line-height: 1.2rem;
+  }
+  .min-x-lower {
+  font-size: .65rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #page-content .tbl-blue a {
+  font-size: .7rem;
+  }
+  .tbl-blue th {
+  font-size: .8rem;
+  line-height: 1.25rem;
+  }
+  .tbl-blue td {
+  font-size: .7rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .tbl-blue td {
+  line-height: 1.2rem;
+  }
+}

@@ -1,0 +1,159 @@
+@keyframes changeDetected {
+    0% {
+        box-shadow: 0 0 0px 0px rgb(255, 255, 0) inset;
+    }
+
+    50% {
+        box-shadow: 0 0 7px 3px rgb(255, 255, 0) inset;
+        color: #777;
+    }
+
+    100% {
+        box-shadow: 0 0 0px 0px rgb(255, 255, 0) inset;
+    }
+}
+#page-content {  
+    .dd-input-container {
+        input {
+            // background: none;
+            // border: none;
+            // border-bottom: 2px solid #ccc;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 1rem;
+            margin-top: 4px;
+
+
+            // margin-bottom: 0;
+    
+            // &:focus-within {
+            //     border: none;
+            // }
+        }
+    }
+
+    #species-picker {    
+        .change-detected {
+            animation: changeDetected .65s ease-in-out;
+        }
+    }
+}
+
+.vertical-btns {
+    .btn-sq {
+        max-width: 410px;
+    }
+}
+
+.jir-drop {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.dd-container {
+    > span {
+        margin-right: 12px;
+        display: block;
+    }
+}
+
+.jir-drop-list {
+    height: 215px;
+    width: 126px;
+}
+
+.dd-probe {
+    & + .jir-drop-list {
+        width: 250px;
+    }
+}
+
+.prim-anti-step {
+    div {
+        max-width: 100%;
+        word-wrap: anywhere;
+    }
+}
+
+.drop-outer-container {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.droplist-container {
+    &:last-of-type {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+.vertical-rule {
+    height: auto;
+    width: 0px;
+    // background: green;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #eee;
+    margin: 0 50px;
+}
+
+.dd-btn {
+    margin-top: 2px;
+}
+
+.tbl-blue {
+    th,
+    td {
+        border: 1px solid #fff;
+    }
+
+    td {
+        width: 500px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 980px) {
+    .dd-btn {
+        padding: 8px;
+    }
+
+    .tbl-blue {
+        th {
+            width: 60px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .tbl-blue {
+        th {
+            width: 44px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .tbl-blue {
+        th {
+            width: 60px;
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    .drop-outer-container {
+        flex-direction: column;
+    }
+
+    .vertical-rule {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .tbl-blue {
+        th {
+            width: 85px;
+        }
+    }
+}

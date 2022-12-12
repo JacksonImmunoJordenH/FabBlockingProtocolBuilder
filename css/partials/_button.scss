@@ -1,0 +1,36 @@
+.redesign-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.3rem 0;
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+// button element
+.redesign-btn {
+    border: 2px solid $orange;
+    padding: 7px 13px;
+    font-size: .9rem;
+    font-weight: 600;
+    background: $orange;
+    color: #fff !important;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.redesign-btn:hover {
+    // background: lighten($blue, 5%);
+    background: #fff;
+    color: $orange !important;
+}
+
+// MEDIA 
+@media (max-width: 768px) {
+    .redesign-btn {
+        font-size: 1.05rem;
+    }
+}

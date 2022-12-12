@@ -1,0 +1,312 @@
+#page-content {
+    .other-use-item {
+        h4 {
+            color: $darkBlue;
+            font-size: 24px;
+            line-height: 2.5rem;
+            margin: 0;
+            padding-top: 90px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        p {
+            font-weight: 400;
+            margin: .8rem auto;
+        }
+
+        span {
+            margin-top: 1rem;
+        }
+
+        &:hover {
+            h4 {
+                padding-top: 8px;
+            }
+        }
+    }
+
+    .other-use-long {
+        p {
+            margin: .5rem auto;
+        }
+    
+        h4 {
+            padding-top: 66px;
+        }
+    
+        span {
+            margin-top: .6rem;
+        }
+    }
+
+    .other-use-container {
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.other-use-container {
+    display: flex;
+    justify-content: space-between;
+
+    &:hover {
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.other-use-item {
+    margin-top: 2rem;
+    text-align: center;
+    display: block;
+    position: relative;
+
+    width: 48%;
+    height: 220px;
+    background: #fff;
+    border: 3px solid $darkBlue;
+
+    h4 {
+        transition: padding-top .3s ease-out;
+    }
+
+    p {
+        width: 95%;
+        opacity: 0;
+        position: absolute;
+        left: -10000px;
+    }
+
+    span {
+        display: block;
+        color: $green;
+        font-weight: 600;
+    }
+
+    
+    &:hover {
+        h4 {
+            transition: padding-top .3s ease-out;
+        }
+    
+        p {
+            position: static;
+            opacity: 1;
+            transition: opacity .3s ease-in;
+            transition-delay: .1s;
+        }
+    
+        .fa-angle-up {
+            bottom: 120px;
+            opacity: 0;
+            transition: bottom .3s, opacity .3s;
+        }
+    }
+}
+
+.fa-angle-up {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 12px);
+    font-size: 3rem;
+    color: $darkBlue;
+    transition: bottom .3s, opacity .3s;
+}
+
+@media (max-width: 980px) {
+    #page-content {
+        .other-use-item {
+            h4 {
+                padding-top: 8px;
+                font-size: 22px;
+                line-height: 2.2rem;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            p {
+                margin: 1rem auto;
+            }
+        }
+
+        .other-use-long {
+            h4 {
+                padding-top: 8px;
+            }
+        }
+    }
+
+    .other-use-item {
+        height: 240px;
+
+        p {
+            position: static;
+            opacity: 1;
+        }
+
+        span {
+            margin-bottom: -1rem;
+        }
+
+        .fa-angle-up {
+            display: none;
+            opacity: 0;
+            top: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #page-content {
+        .other-use-item {
+            margin: 2rem auto 0;
+
+            span {
+                margin-bottom: -.5rem;
+            }
+        }
+    }
+
+    .other-use-container {
+        flex-direction: column;
+    }
+
+    .other-use-item {
+        width: 98%;
+        max-width: 400px;
+        height: auto;
+    }
+}
+
+@media (max-width: 516px) {
+
+}
+
+@media (max-width: 416px) {
+
+}
+
+
+@media (min-width: 760px) {
+
+}
+
+@media (min-width: 870px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 1800px) {
+
+}
+
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// \\\\\\\\\\\\\\\\  BROWSER COMPATIBILITY \\\\\\\\\\\\\\\\\
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+/* EDGE */
+@supports (-ms-ime-align:auto) {
+
+}
+  
+/* IE 10 & 11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+}
+
+/* iPad */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    #page-content {
+        .other-use-item {
+            h4 {
+                padding-top: 8px;
+                font-size: 22px;
+                line-height: 2.2rem;
+            }
+
+            p {
+                margin: 1rem auto;
+            }
+        }
+
+        .other-use-long {
+            h4 {
+                padding-top: 8px;
+            }
+        }
+    }
+
+    .other-use-container {
+        flex-direction: row;
+    }
+
+    .other-use-item {
+        height: 240px;
+        margin-top: 2rem;
+        width: 48%;
+        max-width: null;
+
+        p {
+            position: static;
+            opacity: 1;
+        }
+
+        span {
+            margin-bottom: -1rem;
+        }
+
+        .fa-angle-up {
+            display: none;
+            opacity: 0;
+            top: 0;
+        }
+    }
+}
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+    #page-content {
+        .other-use-item {
+            h4 {
+                padding-top: 8px;
+                font-size: 22px;
+                line-height: 2.2rem;
+            }
+
+            p {
+                margin: 1rem auto;
+            }
+        }
+
+        .other-use-long {
+            h4 {
+                padding-top: 8px;
+            }
+        }
+    }
+
+    .other-use-item {
+        height: 240px;
+
+        p {
+            position: static;
+            opacity: 1;
+        }
+
+        span {
+            margin-bottom: -1rem;
+        }
+
+        .fa-angle-up {
+            display: none;
+            opacity: 0;
+            top: 0;
+        }
+    }
+}

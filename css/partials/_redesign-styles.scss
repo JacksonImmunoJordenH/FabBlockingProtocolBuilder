@@ -1,0 +1,80 @@
+.page-content-container {
+    width: $fullPage;
+    font-family: $openSans;
+
+    p {
+        line-height: 1.6rem !important;
+        font-size: 1rem !important;
+        padding-bottom: 1rem;
+        color: #000 !important;
+    }
+
+    h2 {
+        font-size: 1.35rem !important;
+        font-weight: 600 !important;
+        line-height: 2rem !important;
+    }
+
+    h3 {
+        font-size: 1.18rem !important;
+        line-height: 1.8rem !important;
+        font-weight: 600 !important;
+        color: $darkBlue !important;
+    }
+
+    h4 {
+        font-weight: 600;
+        line-height: 1.65rem;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        margin-top: 1rem;
+        line-height: 1.6rem !important;
+        font-size: 1rem !important;
+    }
+
+    li::before {
+        font-family: "Font Awesome 5 Pro";
+        display: inline-block;
+        content: "\f3c5";
+        transform: rotate(-90deg);
+        margin-left: -20px;
+        margin-right: 8px;
+        font-size: .95rem;
+        color: $darkBlue;
+        font-weight: 600;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+}
+
+.page-content-container {
+    
+    a {
+        text-decoration: none;
+        color: $linkBlue;
+    }
+
+    a:hover {
+        color: $linkBlueHover;
+        text-decoration: underline;
+    }
+
+}
+
+.redesign-btn-container {
+    .fad,
+	.fas,
+	.far,
+	.fal {
+		margin-right: 10px;
+	}
+}
