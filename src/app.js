@@ -123,6 +123,7 @@ let speciesTrack = 0;
 let antigen = ['Antigen A', 'Antigen B']
 let textBox = document.querySelectorAll('.antigen-text');
 let antigenSpan;
+let step2Text;
 
 for (let i = 0; i < textBox.length; i++) {
     textBox[i].addEventListener('keyup', function() {
@@ -286,7 +287,7 @@ for (let i = 0; i < dropBtn.length; i++) {
 
                     tableRow[1].children[1].children[0].classList.add('js-hide');
                     tableRow[1].children[1].children[1].classList.remove('js-hide');
-                    if (this.classList.contains('dd-sample') || this.classList.contains('dd-secondary')) {
+                    if (this.classList.contains('dd-secondary')) {
                         changeDetected(tableRow[1].children[1]);
                     }
                 } else if (dropBtn[0].innerText.toLowerCase() !== 'select' && dropBtn[1].innerText.toLowerCase() !== 'select' && dropBtn[2].innerText.toLowerCase() !== 'select' && dropBtn[0].innerText.toLowerCase() !== dropBtn[1].innerText.toLowerCase()) {
@@ -294,7 +295,7 @@ for (let i = 0; i < dropBtn.length; i++) {
 
                     tableRow[1].children[1].children[0].classList.add('js-hide');
                     tableRow[1].children[1].children[1].classList.remove('js-hide');
-                    if (this.classList.contains('dd-sample') || this.classList.contains('dd-secondary')) {
+                    if (this.classList.contains('dd-secondary')) {
                         changeDetected(tableRow[1].children[1]);
                     }
                 } else if (dropBtn[1].innerText.toLowerCase() !== 'select' && dropBtn[2].innerText.toLowerCase() !== 'select' && dropBtn[0].innerText.toLowerCase() === 'select') {
@@ -302,10 +303,21 @@ for (let i = 0; i < dropBtn.length; i++) {
 
                     tableRow[1].children[1].children[0].classList.add('js-hide');
                     tableRow[1].children[1].children[1].classList.remove('js-hide');
-                    if (this.classList.contains('dd-sample') || this.classList.contains('dd-secondary')) {
+                    if (this.classList.contains('dd-secondary')) {
                         changeDetected(tableRow[1].children[1]);
                     }
                 }
+
+                console.log('start');
+                console.log(tableRow[1].children[1].children[1].innerText);
+                console.log('---------------');
+                console.log(step2Text);
+                console.log('end');
+
+                if (tableRow[1].children[1].children[1].innerText !== step2Text && !tableRow[1].children[1].children[1].classList.contains('js-hide')) {
+                    changeDetected(tableRow[1].children[1]);
+                }
+                step2Text = tableRow[1].children[1].children[1].innerText;
 
                 // Step 3
                 if (textBox[0].value === '') {
