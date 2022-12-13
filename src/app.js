@@ -236,7 +236,7 @@ for (let i = 0; i < dropBtn.length; i++) {
                         // console.log(`nextElementSibling: ${dropBtn[2].nextElementSibling.children[y].innerText} | dropItem: ${dropItem[x].innerText}`);
 
                         // Show previous selection in Blocking dropdown
-                        if (dropBtn[2].nextElementSibling.children[y].innerText === prevVal[i]) {
+                        if (dropBtn[2].nextElementSibling.children[y].innerText === prevVal[i] && dropBtn[2].nextElementSibling.children[y].innerText !== dropBtn[0].innerText && dropBtn[2].nextElementSibling.children[y].innerText !== dropBtn[1].innerText) {
                             dropBtn[2].nextElementSibling.children[y].classList.remove('js-hide');
                         }
                         // Hide current selection in Blocking dropdown
@@ -262,7 +262,7 @@ for (let i = 0; i < dropBtn.length; i++) {
                     }
 
                 }
-                
+
                 // set previous selection for this dropdown to current selection
                 prevVal[i] = dropItem[x].innerText;
 
@@ -307,12 +307,6 @@ for (let i = 0; i < dropBtn.length; i++) {
                         changeDetected(tableRow[1].children[1]);
                     }
                 }
-
-                console.log('start');
-                console.log(tableRow[1].children[1].children[1].innerText);
-                console.log('---------------');
-                console.log(step2Text);
-                console.log('end');
 
                 if (tableRow[1].children[1].children[1].innerText !== step2Text && !tableRow[1].children[1].children[1].classList.contains('js-hide')) {
                     changeDetected(tableRow[1].children[1]);
